@@ -12,13 +12,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{73B0D31C-2
 		src\docs\PROJECT_DESCRIPTION.pdf = src\docs\PROJECT_DESCRIPTION.pdf
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.Web", "src\web\Algebra.SecureCoding.Web\Algebra.SecureCoding.Web.csproj", "{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{028E1C49-D8ED-4C8E-86B1-6928A2D76EE4} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
 		{73B0D31C-24FC-4A9C-B8D0-6705CEE9BF0D} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
+		{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C} = {028E1C49-D8ED-4C8E-86B1-6928A2D76EE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F03C4222-6179-453C-826C-C1A44D6D3CB0}
