@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{749A7DED-8DC6-4174-9EC3-9F0837792B15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "web", "web", "{028E1C49-D8ED-4C8E-86B1-6928A2D76EE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{73B0D31C-24FC-4A9C-B8D0-6705CEE9BF0D}"
+	ProjectSection(SolutionItems) = preProject
+		src\docs\PROJECT_DESCRIPTION.pdf = src\docs\PROJECT_DESCRIPTION.pdf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{028E1C49-D8ED-4C8E-86B1-6928A2D76EE4} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
+		{73B0D31C-24FC-4A9C-B8D0-6705CEE9BF0D} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F03C4222-6179-453C-826C-C1A44D6D3CB0}
+	EndGlobalSection
+EndGlobal
