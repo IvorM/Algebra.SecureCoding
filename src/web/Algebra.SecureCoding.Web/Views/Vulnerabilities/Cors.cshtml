@@ -1,0 +1,28 @@
+﻿
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <h1 class="h1">Cross-Origin Resource Sharing (CORS)</h1>
+                <button type="button" class="btn btn-primary" onclick="getData()">Get data</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function getData() {
+            fetch("/api/SuperCoolFunctionality", {
+                method: "GET"
+            }).then(response => {
+                console.log(response);
+            }).catch(error => {
+                console.log(error);
+            });
+        }
+        
+    </script>
+}

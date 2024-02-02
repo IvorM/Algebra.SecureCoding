@@ -13,6 +13,12 @@ builder.Services.AddDbContext<DbSqlInjectionContext>(options =>
 
 builder.Services.AddScoped<IProductService,ProductService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("OpenPolicy",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -25,7 +31,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseCors("OpenPolicy");
 app.UseAuthorization();
 
 app.MapControllerRoute(

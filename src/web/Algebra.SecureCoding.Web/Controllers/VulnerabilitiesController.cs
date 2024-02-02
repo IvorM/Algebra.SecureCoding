@@ -25,5 +25,11 @@ namespace Algebra.SecureCoding.Web.Controllers
         {
             return View("SqlInjectionResult", await _productService.SearchForProductByName(search.SearchTerm));
         }
+
+        [HttpGet]
+        public IActionResult Cors()
+        {
+            return View();
+        }
     }
 }
