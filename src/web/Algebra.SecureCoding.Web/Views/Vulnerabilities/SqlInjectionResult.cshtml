@@ -1,0 +1,31 @@
+﻿@using Algebra.SecureCoding.Web.Models.Shared;
+@using Algebra.SecureCoding.Web.Models.SqlInjection;
+@model Result<List<ProductDto>>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                @if (Model.IsOk)
+                {
+                    <h1>Products</h1>
+                    <table class="table">
+                        <thead>Product name</thead>
+                        <thead>Price</thead>
+                        <tbody>
+                            @foreach (var product in Model.Value)
+                            {
+                                <tr>
+                                    <td>@product.Name</td>
+                                    <td>@product.Price.ToString("c")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿@using Algebra.SecureCoding.Web.Models.SqlInjection
+@model SqlInjectionSearchRequest
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <h1 class="h1">Sql injection</h1>
+                <form method="post" asp-action="SqlInjection">
+                    <div class="mb-3">
+                        <label for="SearchTerm" class="form-label">Search term:</label>
+                        <input asp-for="SearchTerm" placeholder="Input here">
+                        <div id="SearchTermHelp" class="form-text">Dont wory, you wont break anything</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
