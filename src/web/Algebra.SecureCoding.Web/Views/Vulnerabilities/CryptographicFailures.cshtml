@@ -1,0 +1,35 @@
+﻿@using Algebra.SecureCoding.Web.Models.CryptographicFailures
+@model CardInformationDto
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+        </div>
+        <div class="col-lg-6">
+            <h2>Card Information</h2>
+            <form asp-action="CryptographicFailures" method="post">
+                <div class="form-group">
+                    <label for="cardName">Cardholder's Name</label>
+                    <input type="text" class="form-control" asp-for="CardholdersName" placeholder="Cardholder's Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" class="form-control" asp-for="CardNumber" placeholder="Valid Card Number" pattern="\d*" minlength="16" maxlength="16" required>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="cardExpiration">Expiration Date</label>
+                        <input type="text" class="form-control" asp-for="ExpirationDate" placeholder="MM/YY" pattern="\d{2}/\d{2}" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <label for="cardCVV">CVV</label>
+                        <input type="text" class="form-control" asp-for="Ccv" placeholder="CVV" pattern="\d*" minlength="3" maxlength="3" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary m-2 float-end">Submit Payment</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿@using Algebra.SecureCoding.Web.Models.CryptographicFailures
+@model CardInformationDto
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+        </div>
+        <div class="col-lg-6">
+            <h2>Submitted Card Information</h2>
+            <div><strong>Cardholder's Name:</strong> @Model.CardholdersName</div>
+            <div><strong>Card Number:</strong> @Model.CardNumber</div>
+            <div><strong>Expiration Date:</strong> @Model.ExpirationDate</div>
+            <div><strong>CVV:</strong> @Model.Ccv</div>
+        </div>
+    </div>
+</div>

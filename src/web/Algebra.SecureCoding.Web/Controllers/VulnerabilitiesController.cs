@@ -1,4 +1,4 @@
-﻿using Algebra.SecureCoding.Web.Data.SqlInjection;
+﻿using Algebra.SecureCoding.Web.Models.CryptographicFailures;
 using Algebra.SecureCoding.Web.Models.SqlInjection;
 using Algebra.SecureCoding.Web.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +30,18 @@ namespace Algebra.SecureCoding.Web.Controllers
         public IActionResult Cors()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult CryptographicFailures()
+        {
+            return View(new CardInformationDto());
+        }
+
+        [HttpPost]
+        public IActionResult CryptographicFailures(CardInformationDto cardInformation)
+        {
+            return View("CryptographicFailuresResult", cardInformation);
         }
     }
 }
