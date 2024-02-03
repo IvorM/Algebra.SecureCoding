@@ -26,7 +26,7 @@ namespace Algebra.SecureCoding.Web.Services
                 );
                 await _context.SaveChangesAsync();
 
-                var product = await _context.Products
+                var products = await _context.Products
                             .FromSqlRaw($"SELECT * FROM Products WHERE Name LIKE '%{name}%'")
                             .Select(x => new ProductDto
                             {
@@ -38,7 +38,7 @@ namespace Algebra.SecureCoding.Web.Services
                 return new Result<List<ProductDto>>
                 {
                     IsOk = true,
-                    Value = product
+                    Value = products
                 };
             }
             catch (Exception e)

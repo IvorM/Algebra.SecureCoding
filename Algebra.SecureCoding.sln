@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.Web", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zap_report-prefix", "zap_report-prefix", "{72EFEE8C-8F87-48D4-9DAA-57F683D4707A}"
 	ProjectSection(SolutionItems) = preProject
-		src\docs\zap_report-prefix\2024-02-03-ZAP-Report-.html = src\docs\zap_report-prefix\2024-02-03-ZAP-Report-.html
+		src\docs\zap_report-prefix\2024-02-03-ZAP-Report-localhost_prefix.html = src\docs\zap_report-prefix\2024-02-03-ZAP-Report-localhost_prefix.html
 		src\docs\zap_report-prefix\zap32x32.png = src\docs\zap_report-prefix\zap32x32.png
 	EndProjectSection
 EndProject

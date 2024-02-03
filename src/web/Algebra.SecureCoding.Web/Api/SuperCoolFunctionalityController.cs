@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Algebra.SecureCoding.Web.Models.SqlInjection;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Algebra.SecureCoding.Web.Api
@@ -10,7 +11,12 @@ namespace Algebra.SecureCoding.Web.Api
         [HttpGet]
         public IActionResult GetSuperCoolFunctionality()
         {
-            return Ok(new { superData = "Super cool functionality" });
+            var superData = new List<object>()
+            {
+                new { Advice = "Buy this stock tomorow" },
+                new { Advice = "Sell this stock tomorow" }
+            };
+            return Ok(superData);
         }
     }
 }

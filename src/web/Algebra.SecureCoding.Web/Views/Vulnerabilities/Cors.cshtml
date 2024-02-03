@@ -1,28 +1,74 @@
 ﻿
 <div class="container">
+    <div class="text-center">
+        <h1>A01:2021 – Broken Access Control</h1>
+    </div>
     <div class="row">
         <div class="col-lg-6">
-        </div>
-        <div class="col-lg-6">
             <div class="row">
-                <h1 class="h1">Cross-Origin Resource Sharing (CORS)</h1>
-                <button type="button" class="btn btn-primary" onclick="getData()">Get data</button>
+                <div class="col-12">
+                    <h3>Overview</h3>
+                    <p>Moving up from the fifth position, 94% of applications were tested for some form of broken access control with the average incidence rate of 3.81%, and has the most occurrences in the contributed dataset with over 318k. Notable Common Weakness Enumerations (CWEs) included are CWE-200: Exposure of Sensitive Information to an Unauthorized Actor, CWE-201: Insertion of Sensitive Information Into Sent Data, and CWE-352: Cross-Site Request Forgery.</p>
+                    <h3>Description</h3>
+                    <p>Access control enforces policy such that users cannot act outside of their intended permissions. Failures typically lead to unauthorized information disclosure, modification, or destruction of all data or performing a business function outside the user's limits. Common access control vulnerabilities include:</p>
+                    <ul>
+                        <li>Violation of the principle of least privilege or deny by default, where access should only be granted for particular capabilities, roles, or users, but is available to anyone.</li>
+                        <li>Bypassing access control checks by modifying the URL (parameter tampering or force browsing), internal application state, or the HTML page, or by using an attack tool modifying API requests.</li>
+                        <li>Permitting viewing or editing someone else's account, by providing its unique identifier (insecure direct object references)</li>
+                        <li>Accessing API with missing access controls for POST, PUT and DELETE.</li>
+                        <li>Elevation of privilege. Acting as a user without being logged in or acting as an admin when logged in as a user.</li>
+                        <li>Metadata manipulation, such as replaying or tampering with a JSON Web Token (JWT) access control token, or a cookie or hidden field manipulated to elevate privileges or abusing JWT invalidation.</li>
+                        <li>CORS misconfiguration allows API access from unauthorized/untrusted origins.</li>
+                        <li>Force browsing to authenticated pages as an unauthenticated user or to privileged pages as a standard user.</li>
+                    </ul>
+                </div>
             </div>
+        </div>
+        <div class="col-lg-6 p-4">
+            <h2>Sensitive data</h2>
+            <div id="sensitiveDataContainer">
+                <table class="table table-striped" id="adviceTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Advice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <h2>What's this</h2>
+            <p>This page loads sensitive data, that attracts people to this page. Data is delivered by API. Unforitunatly, developer forgot to put CORS policy and every body can display ths data.  </p>
+            <h2>Let's try it.</h2>
+            <p>Use curl to simulate call from different origin</p>
+            <code>
+                curl -X GET -H "Origin: http://example.com" -v http://localhost:5017/api/SuperCoolFunctionality
+            </code>
+            <p>You hould get this:</p>
+            <img style="cursor:zoom-in" class="img-fluid" src="~/img/curl1.png" id="wiresharkImg" />
         </div>
     </div>
 </div>
 
-@section Scripts{
+
+@section Scripts {
     <script>
-        function getData() {
+        $(document).ready(function () {
             fetch("/api/SuperCoolFunctionality", {
-                method: "GET"
-            }).then(response => {
-                console.log(response);
-            }).catch(error => {
+                method: "GET",
+            }).then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('adviceTable').getElementsByTagName('tbody')[0];
+                    data.forEach(item => {
+                        let row = tableBody.insertRow();
+                        let cell = row.insertCell(0);
+                        cell.innerHTML = item.advice;
+                    });
+                }).catch(error => {
                 console.log(error);
             });
-        }
+        });
         
+
     </script>
-}
+} 

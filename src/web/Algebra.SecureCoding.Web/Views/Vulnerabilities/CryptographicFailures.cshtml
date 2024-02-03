@@ -2,11 +2,36 @@
 @model CardInformationDto
 
 <div class="container">
+    <div class="text-center">
+        <h1>A02:2021 – Cryptographic Failures</h1>
+    </div>
     <div class="row">
         <div class="col-lg-6">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Overview</h3>
+                    <p>Shifting up one position to #2, previously known as Sensitive Data Exposure, which is more of a broad symptom rather than a root cause, the focus is on failures related to cryptography (or lack thereof). Which often lead to exposure of sensitive data. Notable Common Weakness Enumerations (CWEs) included are CWE-259: Use of Hard-coded Password, CWE-327: Broken or Risky Crypto Algorithm, and CWE-331 Insufficient Entropy.</p>
+                    <h3>Description</h3>
+                    <p>The first thing is to determine the protection needs of data in transit and at rest. For example, passwords, credit card numbers, health records, personal information, and business secrets require extra protection, mainly if that data falls under privacy laws, e.g., EU's General Data Protection Regulation (GDPR), or regulations, e.g., financial data protection such as PCI Data Security Standard (PCI DSS). For all such data:</p>
+                    <ul>
+                        <li>Is any data transmitted in clear text? This concerns protocols such as HTTP, SMTP, FTP also using TLS upgrades like STARTTLS. External internet traffic is hazardous. Verify all internal traffic, e.g., between load balancers, web servers, or back-end systems.</li>
+                        <li>Are any old or weak cryptographic algorithms or protocols used either by default or in older code?</li>
+                        <li>Is encryption not enforced, e.g., are any HTTP headers (browser) security directives or headers missing?</li>
+                        <li>Is the received server certificate and the trust chain properly validated?</li>
+                        <li>Are initialization vectors ignored, reused, or not generated sufficiently secure for the cryptographic mode of operation? Is an insecure mode of operation such as ECB in use? Is encryption used when authenticated encryption is more appropriate?</li>
+                        <li>Are passwords being used as cryptographic keys in absence of a password base key derivation function?</li>
+                        <li>Is randomness used for cryptographic purposes that was not designed to meet cryptographic requirements? Even if the correct function is chosen, does it need to be seeded by the developer, and if not, has the developer over-written the strong seeding functionality built into it with a seed that lacks sufficient entropy/unpredictability?</li>
+                        <li>Are deprecated hash functions such as MD5 or SHA1 in use, or are non-cryptographic hash functions used when cryptographic hash functions are needed?</li>
+                        <li>Are deprecated cryptographic padding methods such as PKCS number 1 v1.5 in use?</li>
+                        <li>Are cryptographic error messages or side channel information exploitable, for example in the form of padding oracle attacks?</li>
+                    </ul>
+                    <p>See ASVS Crypto (V7), Data Protection (V9), and SSL/TLS (V10)</p>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6">
-            <h2>Card Information</h2>
+        <div class="col-lg-6 p-4">
+            <h1 class="h1">Try it out</h1>
+            <h5>Let's pretend you are try pay for some product and you need to submit credit card information.</h5>
             <form asp-action="CryptographicFailures" method="post">
                 <div class="form-group">
                     <label for="cardName">Cardholder's Name</label>

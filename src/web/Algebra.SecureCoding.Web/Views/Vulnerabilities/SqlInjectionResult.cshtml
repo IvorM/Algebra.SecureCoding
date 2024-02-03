@@ -3,28 +3,79 @@
 @model Result<List<ProductDto>>
 
 <div class="container">
+    <div class="text-center">
+        <h1>A03:2021 – Injection</h1>
+    </div>
     <div class="row">
         <div class="col-lg-6">
-        </div>
-        <div class="col-lg-6">
             <div class="row">
-                @if (Model.IsOk)
-                {
-                    <h1>Products</h1>
-                    <table class="table">
-                        <thead>Product name</thead>
-                        <thead>Price</thead>
-                        <tbody>
-                            @foreach (var product in Model.Value)
-                            {
+                <div class="col-12">
+                    <h3>How to Prevent</h3>
+                    <p>Preventing injection requires keeping data separate from commands and queries:</p>
+                    <ul>
+                        <li>
+                            The preferred option is to use a safe API, which avoids using the interpreter entirely, provides a parameterized interface, or migrates to Object Relational Mapping Tools (ORMs).
+                            Note: Even when parameterized, stored procedures can still introduce SQL injection if PL/SQL or T-SQL concatenates queries and data or executes hostile data with EXECUTE IMMEDIATE or exec().
+                        </li>
+                        <li>
+                            Use positive server-side input validation. This is not a complete defense as many applications require special characters, such as text areas or APIs for mobile applications.
+                        </li>
+                        <li>
+                            For any residual dynamic queries, escape special characters using the specific escape syntax for that interpreter.
+                            Note: SQL structures such as table names, column names, and so on cannot be escaped, and thus user-supplied structure names are dangerous. This is a common issue in report-writing software.
+                        </li>
+                        <li>
+                            Use LIMIT and other SQL controls within queries to prevent mass disclosure of records in case of SQL injection.
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 p-5">
+            <div class="row">
+                <div class="col-12">
+                    @if (Model.IsOk)
+                    {
+                        <h1>Products</h1>
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
-                                    <td>@product.Name</td>
-                                    <td>@product.Price.ToString("c")</td>
+                                    <th scope="col">Product name</th>
+                                    <th scope="col">Price</th>
                                 </tr>
-                            }
-                        </tbody>
-                    </table>
-                }
+                            </thead>
+
+                            <tbody>
+                                @foreach (var product in Model.Value)
+                                {
+                                    <tr>
+                                        <td scope="row">@product.Name</td>
+                                        <td>@product.Price.ToString("c")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+                <div class="col-12 m-2">
+                    <h3>What happened?</h3>
+                    <p>Looks like developer took user input (e.g., from a form or URL parameter) and directly used it in an SQL query without proper validation or sanitization.</p>
+                    <pre><code>
+var products = await _context.Products
+     .FromSqlRaw($"SELECT * FROM Products WHERE Name LIKE '%{name}%'")
+     .Select(x => new ProductDto
+        {
+          Name = x.Name,
+          Price = x.Price
+        })
+        .ToListAsync();
+                    </code></pre>
+                </div>
+            </div>
+            <div class="row">
+                
+                <a class="btn btn-sm btn-primary" asp-action="SqlInjection">Try again</a>
             </div>
         </div>
     </div>
