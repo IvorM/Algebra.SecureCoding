@@ -59,17 +59,24 @@
                     }
                 </div>
                 <div class="col-12 m-2">
-                    <h3>What happened?</h3>
-                    <p>Looks like developer took user input (e.g., from a form or URL parameter) and directly used it in an SQL query without proper validation or sanitization.</p>
+                    <h3>How was it fixed?</h3>
+                    <p>One of the most effective ways to prevent SQL Injection attacks is to use parametrized queries. Here, instead of directly injecting literals into the SQL query as we saw in the vulnerable examples earlier, EF Core parametrizes queries internally when using the LINQ query syntax:</p>
                     <pre><code>
-var products = await _context.Products
-     .FromSqlRaw($"SELECT * FROM Products WHERE Name LIKE '%{name}%'")
-     .Select(x => new ProductDto
-        {
-          Name = x.Name,
-          Price = x.Price
-        })
-        .ToListAsync();
+ var products = await _context.Products
+                .Where(x=>x.Name.Contains(name))
+                .Select(x => new ProductDto
+                {
+                  Name = x.Name,
+                  Price = x.Price
+                })
+                 .ToListAsync();
+                    </code></pre>
+                    <p>When EF Core translates this LINQ query into SQL, it will parameterize the name parameter:</p>
+                    <pre><code>
+Information: Executed DbCommand (1ms) [Parameters=[@@__name_0_rewritten='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price]
+FROM [Products] AS [p]
+WHERE [p].[Name] LIKE @@__name_0_rewritten ESCAPE N'\'
                     </code></pre>
                 </div>
             </div>

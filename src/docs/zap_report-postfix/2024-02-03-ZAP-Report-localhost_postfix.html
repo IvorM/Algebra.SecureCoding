@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZAP Scanning Report</title>
+<link
+	href="./normalize/normalize.css" rel="stylesheet">
+<link
+	href="./themes/original/main.css" rel="stylesheet">
+<link
+	href="./themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>ZAP Scanning Report</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Sat 3 Feb 2024, at 20:49:16</span>
+		</p>
+		<p>ZAP Version: 2.14.0</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About this report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert counts by risk and confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert counts by site and risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert counts by alert type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-1-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-1-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Low</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(2)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-0-confidence-1"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Low</span> <span>(3)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About this report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://localhost:7276</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 <span>None</span>
+						
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert counts by risk and confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%"><col
+							style="width: 14.0%">
+						<col style="width: 14.0%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="5">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Low</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="5">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Low</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>3</span><br> <span class="additional-info-percentages">(37.5%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(37.5%)</span></td>
+							<td><span>5</span><br> <span class="additional-info-percentages">(62.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(12.5%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(50.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(37.5%)</span></td>
+							<td><span>8</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert counts by site and risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%"><col
+							style="width: 16.25%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="4">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Low</span><br>   <span
+									class="additional-info-percentages">(&gt;= Low)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="1">Site</th>
+							<th scope="row">https://localhost:7276</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(3)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(8)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert counts by alert type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Cookie Without Secure Flag</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Strict-Transport-Security Header Not Set</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>18</span><br> <span
+								class="additional-info-percentages">(225.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">X-Content-Type-Options Header Missing</a></th>
+							<td class="risk-level">Low</td>
+							<td><span>16</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Information Disclosure - Suspicious Comments</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Loosely Scoped Cookie</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(25.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-5">Re-examine Cache-control Directives</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>7</span><br> <span
+								class="additional-info-percentages">(87.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-6">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(37.5%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-7">User Agent Fuzzer</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>24</span><br> <span
+								class="additional-info-percentages">(300.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>8</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				 
+				
+				
+				<li id="alerts--risk-1-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost:7276</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Strict-Transport-Security Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>HTTP Strict Transport Security (HSTS) is a web security policy mechanism whereby a web server declares that complying user agents (such as a web browser) are to interact with it using only secure HTTPS connections (i.e. HTTP layered over TLS/SSL). HSTS is an IETF standards track protocol and is specified in RFC 6797.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (319 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (425 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Length: 231
+Content-Type: text/javascript
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: &quot;1da56176899d7e7&quot;
+Last-Modified: Fri, 02 Feb 2024 20:35:50 GMT
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (231 bytes)</summary>
+				
+				<pre><code>﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// for details on configuring this project to bundle and minify static web assets.
+
+// Write your JavaScript code.
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-1-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Low</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost:7276</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Cookie Without Secure Flag</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/Vulnerabilities/SqlInjection</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>A cookie has been set without the secure flag, which means that the cookie can be accessed via unencrypted connections.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (291 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/Vulnerabilities/SqlInjection HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (635 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.PWx2ylKgrnw=CfDJ8E9MlYFGcVVKheALfoVZ4AkXAq-OaIlJpYsV4N9iVRbDFVsEEzh7pF_n4YAGRck03QM9cOljOX9-d-KVNyz-n_9KXhwa27Hb-t7KXmO3q3U8o_5YjAHNPmsBmcIYZ2N0N2SnfGIbYSHuORVhJCoohdU; path=/; samesite=strict; httponly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+content-length: 5911
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5911 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Secure coding&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/lib/bootstrap/dist/css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/Algebra.SecureCoding.Web.styles.css?v=_ILVjLF4CMbUu9c2uUFhGNKac4fRxnxz-Bb_zAoUkco&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header b-se97mstpe7&gt;
+        &lt;nav b-se97mstpe7 class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3&quot;&gt;
+            &lt;div b-se97mstpe7 class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Secure coding&lt;/a&gt;
+                &lt;button b-se97mstpe7 class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.navbar-collapse&quot; aria-controls=&quot;navbarSupportedContent&quot;
+                        aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span b-se97mstpe7 class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div b-se97mstpe7 class=&quot;navbar-collapse collapse d-sm-inline-flex justify-content-between&quot;&gt;
+                    &lt;ul b-se97mstpe7 class=&quot;navbar-nav flex-grow-1&quot;&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/Cors&quot;&gt;Broken access control (Cors)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/CryptographicFailures&quot;&gt;CryptographicFailures(No ssl, plain text)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/SqlInjection&quot;&gt;Injection (Sql injection)&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+        &lt;main b-se97mstpe7 role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+            
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+        &lt;h1&gt;A03:2021 – Injection&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12&quot;&gt;
+                    &lt;h3&gt;Overview&lt;/h3&gt;
+                    &lt;p&gt;Injection slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3%, and 274k occurrences. Notable Common Weakness Enumerations (CWEs) included are CWE-79: Cross-site Scripting, CWE-89: SQL Injection, and CWE-73: External Control of File Name or Path.&lt;/p&gt;
+                    &lt;h3&gt;Description&lt;/h3&gt;
+                    &lt;p&gt;An application is vulnerable to attack when:&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;User-supplied data is not validated, filtered, or sanitized by the application.&lt;/li&gt;
+                        &lt;li&gt;Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is used within object-relational mapping (ORM) search parameters to extract additional, sensitive records.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is directly used or concatenated. The SQL or command contains the structure and malicious data in dynamic queries, commands, or stored procedures.&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Some of the more common injections are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters. Source code review is the best method of detecting if applications are vulnerable to injections. Automated testing of all parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs is strongly encouraged. Organizations can include static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline to identify introduced injection flaws before production deployment.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6 p-3&quot;&gt;
+            &lt;div class=&quot;row float-end&quot;&gt;
+                &lt;h1 class=&quot;h1&quot;&gt;Try it out&lt;/h1&gt;
+                &lt;form method=&quot;post&quot; action=&quot;/Vulnerabilities/SqlInjection&quot;&gt;
+                    &lt;div class=&quot;mb-3&quot;&gt;
+                        &lt;label for=&quot;SearchTerm&quot; class=&quot;form-label&quot;&gt;Search products by name:&lt;/label&gt;
+                        &lt;input placeholder=&quot;Product name&quot; required type=&quot;text&quot; data-val=&quot;true&quot; data-val-required=&quot;Search term is required&quot; id=&quot;SearchTerm&quot; name=&quot;SearchTerm&quot; value=&quot;&quot;&gt;
+                        &lt;div id=&quot;SearchTermHelp&quot; class=&quot;form-text&quot;&gt;Dont wory, you wont break anything. Try with &#39; OR &#39;1&#39;=&#39;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Search&lt;/button&gt;
+                &lt;input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=&quot;CfDJ8E9MlYFGcVVKheALfoVZ4And0KVp2gzVr5axgwFuNAiGBkUKrZmzs0sqYdJea_GwSxuKCRxSm7DJ1JRt-53gLrdOI84agzLWuG171lc64zao4jXsaK7QzIEeWWVScVc2WDAaHDNEIHENsPJYNCvSRj0&quot; /&gt;&lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        &lt;/main&gt;
+    &lt;/div&gt;
+
+    &lt;footer b-se97mstpe7 class=&quot;border-top footer text-muted&quot;&gt;
+        &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+            &amp;copy; 2024 - Ivor Marić
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/lib/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/lib/bootstrap/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo&quot;&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>.AspNetCore.Antiforgery.PWx2ylKgrnw</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Set-Cookie: .AspNetCore.Antiforgery.PWx2ylKgrnw</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Whenever a cookie contains sensitive information or is a session token, then it should always be passed using an encrypted channel. Ensure that the secure flag is set for cookies containing such sensitive information.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">X-Content-Type-Options Header Missing</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.</p>
+
+<p>At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (321 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (418 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Length: 362
+Content-Type: text/css
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: &quot;1da56176899d66a&quot;
+Last-Modified: Fri, 02 Feb 2024 20:35:50 GMT
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (362 bytes)</summary>
+				
+				<pre><code>html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-content-type-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</p>
+
+<p>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(2)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost:7276</span> <span>(2)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-6">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/Vulnerabilities/SqlInjection</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:.AspNetCore.Antiforgery.PWx2ylKgrnw</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (291 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/Vulnerabilities/SqlInjection HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (635 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.PWx2ylKgrnw=CfDJ8E9MlYFGcVVKheALfoVZ4AkXAq-OaIlJpYsV4N9iVRbDFVsEEzh7pF_n4YAGRck03QM9cOljOX9-d-KVNyz-n_9KXhwa27Hb-t7KXmO3q3U8o_5YjAHNPmsBmcIYZ2N0N2SnfGIbYSHuORVhJCoohdU; path=/; samesite=strict; httponly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+content-length: 5911
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5911 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Secure coding&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/lib/bootstrap/dist/css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/Algebra.SecureCoding.Web.styles.css?v=_ILVjLF4CMbUu9c2uUFhGNKac4fRxnxz-Bb_zAoUkco&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header b-se97mstpe7&gt;
+        &lt;nav b-se97mstpe7 class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3&quot;&gt;
+            &lt;div b-se97mstpe7 class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Secure coding&lt;/a&gt;
+                &lt;button b-se97mstpe7 class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.navbar-collapse&quot; aria-controls=&quot;navbarSupportedContent&quot;
+                        aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span b-se97mstpe7 class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div b-se97mstpe7 class=&quot;navbar-collapse collapse d-sm-inline-flex justify-content-between&quot;&gt;
+                    &lt;ul b-se97mstpe7 class=&quot;navbar-nav flex-grow-1&quot;&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/Cors&quot;&gt;Broken access control (Cors)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/CryptographicFailures&quot;&gt;CryptographicFailures(No ssl, plain text)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/SqlInjection&quot;&gt;Injection (Sql injection)&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+        &lt;main b-se97mstpe7 role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+            
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+        &lt;h1&gt;A03:2021 – Injection&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12&quot;&gt;
+                    &lt;h3&gt;Overview&lt;/h3&gt;
+                    &lt;p&gt;Injection slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3%, and 274k occurrences. Notable Common Weakness Enumerations (CWEs) included are CWE-79: Cross-site Scripting, CWE-89: SQL Injection, and CWE-73: External Control of File Name or Path.&lt;/p&gt;
+                    &lt;h3&gt;Description&lt;/h3&gt;
+                    &lt;p&gt;An application is vulnerable to attack when:&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;User-supplied data is not validated, filtered, or sanitized by the application.&lt;/li&gt;
+                        &lt;li&gt;Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is used within object-relational mapping (ORM) search parameters to extract additional, sensitive records.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is directly used or concatenated. The SQL or command contains the structure and malicious data in dynamic queries, commands, or stored procedures.&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Some of the more common injections are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters. Source code review is the best method of detecting if applications are vulnerable to injections. Automated testing of all parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs is strongly encouraged. Organizations can include static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline to identify introduced injection flaws before production deployment.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6 p-3&quot;&gt;
+            &lt;div class=&quot;row float-end&quot;&gt;
+                &lt;h1 class=&quot;h1&quot;&gt;Try it out&lt;/h1&gt;
+                &lt;form method=&quot;post&quot; action=&quot;/Vulnerabilities/SqlInjection&quot;&gt;
+                    &lt;div class=&quot;mb-3&quot;&gt;
+                        &lt;label for=&quot;SearchTerm&quot; class=&quot;form-label&quot;&gt;Search products by name:&lt;/label&gt;
+                        &lt;input placeholder=&quot;Product name&quot; required type=&quot;text&quot; data-val=&quot;true&quot; data-val-required=&quot;Search term is required&quot; id=&quot;SearchTerm&quot; name=&quot;SearchTerm&quot; value=&quot;&quot;&gt;
+                        &lt;div id=&quot;SearchTermHelp&quot; class=&quot;form-text&quot;&gt;Dont wory, you wont break anything. Try with &#39; OR &#39;1&#39;=&#39;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Search&lt;/button&gt;
+                &lt;input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=&quot;CfDJ8E9MlYFGcVVKheALfoVZ4And0KVp2gzVr5axgwFuNAiGBkUKrZmzs0sqYdJea_GwSxuKCRxSm7DJ1JRt-53gLrdOI84agzLWuG171lc64zao4jXsaK7QzIEeWWVScVc2WDAaHDNEIHENsPJYNCvSRj0&quot; /&gt;&lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        &lt;/main&gt;
+    &lt;/div&gt;
+
+    &lt;footer b-se97mstpe7 class=&quot;border-top footer text-muted&quot;&gt;
+        &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+            &amp;copy; 2024 - Ivor Marić
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/lib/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/lib/bootstrap/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo&quot;&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>.AspNetCore.Antiforgery.PWx2ylKgrnw</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>CfDJ8E9MlYFGcVVKheALfoVZ4AkXAq-OaIlJpYsV4N9iVRbDFVsEEzh7pF_n4YAGRck03QM9cOljOX9-d-KVNyz-n_9KXhwa27Hb-t7KXmO3q3U8o_5YjAHNPmsBmcIYZ2N0N2SnfGIbYSHuORVhJCoohdU</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-7">User Agent Fuzzer</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/Vulnerabilities/CryptographicFailures</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Check for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). Compares the response statuscode and the hashcode of the response body with the original response.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (239 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/Vulnerabilities/CryptographicFailures HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (635 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Date: Sat, 03 Feb 2024 19:37:14 GMT
+Server: Kestrel
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.PWx2ylKgrnw=CfDJ8E9MlYFGcVVKheALfoVZ4Al6gYgZagZg9I1Mpn3jlZOrQaO-gPlNuCOQpG7riO7nscvGl4mVAGys72DWbew6nm0S3eim2mOlm9LnuBw-1J-PIFCMxyIcghcHC-tyzvftJiVrVeJb742LpNyRuinKN2U; path=/; samesite=strict; httponly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+content-length: 8313
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (8313 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Secure coding&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/lib/bootstrap/dist/css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/Algebra.SecureCoding.Web.styles.css?v=_ILVjLF4CMbUu9c2uUFhGNKac4fRxnxz-Bb_zAoUkco&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header b-se97mstpe7&gt;
+        &lt;nav b-se97mstpe7 class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3&quot;&gt;
+            &lt;div b-se97mstpe7 class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Secure coding&lt;/a&gt;
+                &lt;button b-se97mstpe7 class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.navbar-collapse&quot; aria-controls=&quot;navbarSupportedContent&quot;
+                        aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span b-se97mstpe7 class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div b-se97mstpe7 class=&quot;navbar-collapse collapse d-sm-inline-flex justify-content-between&quot;&gt;
+                    &lt;ul b-se97mstpe7 class=&quot;navbar-nav flex-grow-1&quot;&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/Cors&quot;&gt;Broken access control (Cors)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/CryptographicFailures&quot;&gt;CryptographicFailures(No ssl, plain text)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/SqlInjection&quot;&gt;Injection (Sql injection)&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+        &lt;main b-se97mstpe7 role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+            
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+        &lt;h1&gt;A02:2021 – Cryptographic Failures&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12&quot;&gt;
+                    &lt;h3&gt;Overview&lt;/h3&gt;
+                    &lt;p&gt;Shifting up one position to #2, previously known as Sensitive Data Exposure, which is more of a broad symptom rather than a root cause, the focus is on failures related to cryptography (or lack thereof). Which often lead to exposure of sensitive data. Notable Common Weakness Enumerations (CWEs) included are CWE-259: Use of Hard-coded Password, CWE-327: Broken or Risky Crypto Algorithm, and CWE-331 Insufficient Entropy.&lt;/p&gt;
+                    &lt;h3&gt;Description&lt;/h3&gt;
+                    &lt;p&gt;The first thing is to determine the protection needs of data in transit and at rest. For example, passwords, credit card numbers, health records, personal information, and business secrets require extra protection, mainly if that data falls under privacy laws, e.g., EU&#39;s General Data Protection Regulation (GDPR), or regulations, e.g., financial data protection such as PCI Data Security Standard (PCI DSS). For all such data:&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;Is any data transmitted in clear text? This concerns protocols such as HTTP, SMTP, FTP also using TLS upgrades like STARTTLS. External internet traffic is hazardous. Verify all internal traffic, e.g., between load balancers, web servers, or back-end systems.&lt;/li&gt;
+                        &lt;li&gt;Are any old or weak cryptographic algorithms or protocols used either by default or in older code?&lt;/li&gt;
+                        &lt;li&gt;Is encryption not enforced, e.g., are any HTTP headers (browser) security directives or headers missing?&lt;/li&gt;
+                        &lt;li&gt;Is the received server certificate and the trust chain properly validated?&lt;/li&gt;
+                        &lt;li&gt;Are initialization vectors ignored, reused, or not generated sufficiently secure for the cryptographic mode of operation? Is an insecure mode of operation such as ECB in use? Is encryption used when authenticated encryption is more appropriate?&lt;/li&gt;
+                        &lt;li&gt;Are passwords being used as cryptographic keys in absence of a password base key derivation function?&lt;/li&gt;
+                        &lt;li&gt;Is randomness used for cryptographic purposes that was not designed to meet cryptographic requirements? Even if the correct function is chosen, does it need to be seeded by the developer, and if not, has the developer over-written the strong seeding functionality built into it with a seed that lacks sufficient entropy/unpredictability?&lt;/li&gt;
+                        &lt;li&gt;Are deprecated hash functions such as MD5 or SHA1 in use, or are non-cryptographic hash functions used when cryptographic hash functions are needed?&lt;/li&gt;
+                        &lt;li&gt;Are deprecated cryptographic padding methods such as PKCS number 1 v1.5 in use?&lt;/li&gt;
+                        &lt;li&gt;Are cryptographic error messages or side channel information exploitable, for example in the form of padding oracle attacks?&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;See ASVS Crypto (V7), Data Protection (V9), and SSL/TLS (V10)&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6 p-4&quot;&gt;
+            &lt;h1 class=&quot;h1&quot;&gt;Try it out&lt;/h1&gt;
+            &lt;h5&gt;Let&#39;s pretend you are try pay for some product and you need to submit credit card information.&lt;/h5&gt;
+            &lt;form method=&quot;post&quot; action=&quot;/Vulnerabilities/CryptographicFailures&quot;&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;cardName&quot;&gt;Cardholder&#39;s Name&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Cardholder&#39;s Name&quot; required data-val=&quot;true&quot; data-val-required=&quot;The CardholdersName field is required.&quot; id=&quot;CardholdersName&quot; name=&quot;CardholdersName&quot; value=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;label for=&quot;cardNumber&quot;&gt;Card Number&lt;/label&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Valid Card Number&quot; pattern=&quot;\d*&quot; minlength=&quot;16&quot; maxlength=&quot;16&quot; required data-val=&quot;true&quot; data-val-required=&quot;The CardNumber field is required.&quot; id=&quot;CardNumber&quot; name=&quot;CardNumber&quot; value=&quot;&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;label for=&quot;cardExpiration&quot;&gt;Expiration Date&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;MM/YY&quot; pattern=&quot;\d{2}/\d{2}&quot; required data-val=&quot;true&quot; data-val-required=&quot;The ExpirationDate field is required.&quot; id=&quot;ExpirationDate&quot; name=&quot;ExpirationDate&quot; value=&quot;&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;form-group&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;label for=&quot;cardCVV&quot;&gt;CVV&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;CVV&quot; pattern=&quot;\d*&quot; minlength=&quot;3&quot; maxlength=&quot;3&quot; required data-val=&quot;true&quot; data-val-required=&quot;The Ccv field is required.&quot; id=&quot;Ccv&quot; name=&quot;Ccv&quot; value=&quot;&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary m-2 float-end&quot;&gt;Submit Payment&lt;/button&gt;
+            &lt;input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=&quot;CfDJ8E9MlYFGcVVKheALfoVZ4Akh9X62DYaxYH0TQaEFw1BTCEqgBczV5gR5JU5XfpBT_CTGnDiWpkXmVXmoqFz2cx3pJX3ESMSr1Ei5j0wEdQi8ZWBfaKmxIZujoGpm-albOTWf2Lh7i60k3ZZD4ub-NRw&quot; /&gt;&lt;/form&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+        &lt;/main&gt;
+    &lt;/div&gt;
+
+    &lt;footer b-se97mstpe7 class=&quot;border-top footer text-muted&quot;&gt;
+        &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+            &amp;copy; 2024 - Ivor Marić
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/lib/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/lib/bootstrap/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo&quot;&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>Header User-Agent</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Attack</th>
+		<td><pre><code>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)</code></pre></td>
+	</tr>
+	
+	
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-0-confidence-1">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Low</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://localhost:7276</span> <span>(3)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Information Disclosure - Suspicious Comments</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/lib/bootstrap/dist/js/bootstrap.bundle.min.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage">WSTG-v42-INFO-05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html">OWASP_2017_A03</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;!function(t,e){&quot;object&quot;==typeof exports&amp;&amp;&quot;undefined&quot;!=typeof module?module.exports=e():&quot;function&quot;==typeof define&amp;&amp;define.amd?def&quot;, see evidence field for the suspicious comment/snippet.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (308 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/lib/bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (427 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Length: 78468
+Content-Type: text/javascript
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: &quot;1da56176898e584&quot;
+Last-Modified: Fri, 02 Feb 2024 20:35:50 GMT
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (78468 bytes)</summary>
+				
+				<pre><code>/*!
+  * Bootstrap v5.1.0 (https://getbootstrap.com/)
+  * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  */
+!function(t,e){&quot;object&quot;==typeof exports&amp;&amp;&quot;undefined&quot;!=typeof module?module.exports=e():&quot;function&quot;==typeof define&amp;&amp;define.amd?define(e):(t=&quot;undefined&quot;!=typeof globalThis?globalThis:t||self).bootstrap=e()}(this,(function(){&quot;use strict&quot;;const t=t=&gt;{let e=t.getAttribute(&quot;data-bs-target&quot;);if(!e||&quot;#&quot;===e){let i=t.getAttribute(&quot;href&quot;);if(!i||!i.includes(&quot;#&quot;)&amp;&amp;!i.startsWith(&quot;.&quot;))return null;i.includes(&quot;#&quot;)&amp;&amp;!i.startsWith(&quot;#&quot;)&amp;&amp;(i=&quot;#&quot;+i.split(&quot;#&quot;)[1]),e=i&amp;&amp;&quot;#&quot;!==i?i.trim():null}return e},e=e=&gt;{const i=t(e);return i&amp;&amp;document.querySelector(i)?i:null},i=e=&gt;{const i=t(e);return i?document.querySelector(i):null},n=t=&gt;{t.dispatchEvent(new Event(&quot;transitionend&quot;))},s=t=&gt;!(!t||&quot;object&quot;!=typeof t)&amp;&amp;(void 0!==t.jquery&amp;&amp;(t=t[0]),void 0!==t.nodeType),o=t=&gt;s(t)?t.jquery?t[0]:t:&quot;string&quot;==typeof t&amp;&amp;t.length&gt;0?document.querySelector(t):null,r=(t,e,i)=&gt;{Object.keys(i).forEach(n=&gt;{const o=i[n],r=e[n],a=r&amp;&amp;s(r)?&quot;element&quot;:null==(l=r)?&quot;&quot;+l:{}.toString.call(l).match(/\s([a-z]+)/i)[1].toLowerCase();var l;if(!new RegExp(o).test(a))throw new TypeError(`${t.toUpperCase()}: Option &quot;${n}&quot; provided type &quot;${a}&quot; but expected type &quot;${o}&quot;.`)})},a=t=&gt;!(!s(t)||0===t.getClientRects().length)&amp;&amp;&quot;visible&quot;===getComputedStyle(t).getPropertyValue(&quot;visibility&quot;),l=t=&gt;!t||t.nodeType!==Node.ELEMENT_NODE||!!t.classList.contains(&quot;disabled&quot;)||(void 0!==t.disabled?t.disabled:t.hasAttribute(&quot;disabled&quot;)&amp;&amp;&quot;false&quot;!==t.getAttribute(&quot;disabled&quot;)),c=t=&gt;{if(!document.documentElement.attachShadow)return null;if(&quot;function&quot;==typeof t.getRootNode){const e=t.getRootNode();return e instanceof ShadowRoot?e:null}return t instanceof ShadowRoot?t:t.parentNode?c(t.parentNode):null},h=()=&gt;{},d=t=&gt;{t.offsetHeight},u=()=&gt;{const{jQuery:t}=window;return t&amp;&amp;!document.body.hasAttribute(&quot;data-bs-no-jquery&quot;)?t:null},f=[],p=()=&gt;&quot;rtl&quot;===document.documentElement.dir,m=t=&gt;{var e;e=()=&gt;{const e=u();if(e){const i=t.NAME,n=e.fn[i];e.fn[i]=t.jQueryInterface,e.fn[i].Constructor=t,e.fn[i].noConflict=()=&gt;(e.fn[i]=n,t.jQueryInterface)}},&quot;loading&quot;===document.readyState?(f.length||document.addEventListener(&quot;DOMContentLoaded&quot;,()=&gt;{f.forEach(t=&gt;t())}),f.push(e)):e()},g=t=&gt;{&quot;function&quot;==typeof t&amp;&amp;t()},_=(t,e,i=!0)=&gt;{if(!i)return void g(t);const s=(t=&gt;{if(!t)return 0;let{transitionDuration:e,transitionDelay:i}=window.getComputedStyle(t);const n=Number.parseFloat(e),s=Number.parseFloat(i);return n||s?(e=e.split(&quot;,&quot;)[0],i=i.split(&quot;,&quot;)[0],1e3*(Number.parseFloat(e)+Number.parseFloat(i))):0})(e)+5;let o=!1;const r=({target:i})=&gt;{i===e&amp;&amp;(o=!0,e.removeEventListener(&quot;transitionend&quot;,r),g(t))};e.addEventListener(&quot;transitionend&quot;,r),setTimeout(()=&gt;{o||n(e)},s)},b=(t,e,i,n)=&gt;{let s=t.indexOf(e);if(-1===s)return t[!i&amp;&amp;n?t.length-1:0];const o=t.length;return s+=i?1:-1,n&amp;&amp;(s=(s+o)%o),t[Math.max(0,Math.min(s,o-1))]},v=/[^.]*(?=\..*)\.|.*/,y=/\..*/,w=/::\d+$/,E={};let A=1;const T={mouseenter:&quot;mouseover&quot;,mouseleave:&quot;mouseout&quot;},O=/^(mouseenter|mouseleave)/i,C=new Set([&quot;click&quot;,&quot;dblclick&quot;,&quot;mouseup&quot;,&quot;mousedown&quot;,&quot;contextmenu&quot;,&quot;mousewheel&quot;,&quot;DOMMouseScroll&quot;,&quot;mouseover&quot;,&quot;mouseout&quot;,&quot;mousemove&quot;,&quot;selectstart&quot;,&quot;selectend&quot;,&quot;keydown&quot;,&quot;keypress&quot;,&quot;keyup&quot;,&quot;orientationchange&quot;,&quot;touchstart&quot;,&quot;touchmove&quot;,&quot;touchend&quot;,&quot;touchcancel&quot;,&quot;pointerdown&quot;,&quot;pointermove&quot;,&quot;pointerup&quot;,&quot;pointerleave&quot;,&quot;pointercancel&quot;,&quot;gesturestart&quot;,&quot;gesturechange&quot;,&quot;gestureend&quot;,&quot;focus&quot;,&quot;blur&quot;,&quot;change&quot;,&quot;reset&quot;,&quot;select&quot;,&quot;submit&quot;,&quot;focusin&quot;,&quot;focusout&quot;,&quot;load&quot;,&quot;unload&quot;,&quot;beforeunload&quot;,&quot;resize&quot;,&quot;move&quot;,&quot;DOMContentLoaded&quot;,&quot;readystatechange&quot;,&quot;error&quot;,&quot;abort&quot;,&quot;scroll&quot;]);function k(t,e){return e&amp;&amp;`${e}::${A++}`||t.uidEvent||A++}function L(t){const e=k(t);return t.uidEvent=e,E[e]=E[e]||{},E[e]}function x(t,e,i=null){const n=Object.keys(t);for(let s=0,o=n.length;s&lt;o;s++){const o=t[n[s]];if(o.originalHandler===e&amp;&amp;o.delegationSelector===i)return o}return null}function D(t,e,i){const n=&quot;string&quot;==typeof e,s=n?i:e;let o=I(t);return C.has(o)||(o=t),[n,s,o]}function S(t,e,i,n,s){if(&quot;string&quot;!=typeof e||!t)return;if(i||(i=n,n=null),O.test(e)){const t=t=&gt;function(e){if(!e.relatedTarget||e.relatedTarget!==e.delegateTarget&amp;&amp;!e.delegateTarget.contains(e.relatedTarget))return t.call(this,e)};n?n=t(n):i=t(i)}const[o,r,a]=D(e,i,n),l=L(t),c=l[a]||(l[a]={}),h=x(c,r,o?i:null);if(h)return void(h.oneOff=h.oneOff&amp;&amp;s);const d=k(r,e.replace(v,&quot;&quot;)),u=o?function(t,e,i){return function n(s){const o=t.querySelectorAll(e);for(let{target:r}=s;r&amp;&amp;r!==this;r=r.parentNode)for(let a=o.length;a--;)if(o[a]===r)return s.delegateTarget=r,n.oneOff&amp;&amp;P.off(t,s.type,e,i),i.apply(r,[s]);return null}}(t,i,n):function(t,e){return function i(n){return n.delegateTarget=t,i.oneOff&amp;&amp;P.off(t,n.type,e),e.apply(t,[n])}}(t,i);u.delegationSelector=o?i:null,u.originalHandler=r,u.oneOff=s,u.uidEvent=d,c[d]=u,t.addEventListener(a,u,o)}function N(t,e,i,n,s){const o=x(e[i],n,s);o&amp;&amp;(t.removeEventListener(i,o,Boolean(s)),delete e[i][o.uidEvent])}function I(t){return t=t.replace(y,&quot;&quot;),T[t]||t}const P={on(t,e,i,n){S(t,e,i,n,!1)},one(t,e,i,n){S(t,e,i,n,!0)},off(t,e,i,n){if(&quot;string&quot;!=typeof e||!t)return;const[s,o,r]=D(e,i,n),a=r!==e,l=L(t),c=e.startsWith(&quot;.&quot;);if(void 0!==o){if(!l||!l[r])return;return void N(t,l,r,o,s?i:null)}c&amp;&amp;Object.keys(l).forEach(i=&gt;{!function(t,e,i,n){const s=e[i]||{};Object.keys(s).forEach(o=&gt;{if(o.includes(n)){const n=s[o];N(t,e,i,n.originalHandler,n.delegationSelector)}})}(t,l,i,e.slice(1))});const h=l[r]||{};Object.keys(h).forEach(i=&gt;{const n=i.replace(w,&quot;&quot;);if(!a||e.includes(n)){const e=h[i];N(t,l,r,e.originalHandler,e.delegationSelector)}})},trigger(t,e,i){if(&quot;string&quot;!=typeof e||!t)return null;const n=u(),s=I(e),o=e!==s,r=C.has(s);let a,l=!0,c=!0,h=!1,d=null;return o&amp;&amp;n&amp;&amp;(a=n.Event(e,i),n(t).trigger(a),l=!a.isPropagationStopped(),c=!a.isImmediatePropagationStopped(),h=a.isDefaultPrevented()),r?(d=document.createEvent(&quot;HTMLEvents&quot;),d.initEvent(s,l,!0)):d=new CustomEvent(e,{bubbles:l,cancelable:!0}),void 0!==i&amp;&amp;Object.keys(i).forEach(t=&gt;{Object.defineProperty(d,t,{get:()=&gt;i[t]})}),h&amp;&amp;d.preventDefault(),c&amp;&amp;t.dispatchEvent(d),d.defaultPrevented&amp;&amp;void 0!==a&amp;&amp;a.preventDefault(),d}},j=new Map;var M={set(t,e,i){j.has(t)||j.set(t,new Map);const n=j.get(t);n.has(e)||0===n.size?n.set(e,i):console.error(`Bootstrap doesn&#39;t allow more than one instance per element. Bound instance: ${Array.from(n.keys())[0]}.`)},get:(t,e)=&gt;j.has(t)&amp;&amp;j.get(t).get(e)||null,remove(t,e){if(!j.has(t))return;const i=j.get(t);i.delete(e),0===i.size&amp;&amp;j.delete(t)}};class H{constructor(t){(t=o(t))&amp;&amp;(this._element=t,M.set(this._element,this.constructor.DATA_KEY,this))}dispose(){M.remove(this._element,this.constructor.DATA_KEY),P.off(this._element,this.constructor.EVENT_KEY),Object.getOwnPropertyNames(this).forEach(t=&gt;{this[t]=null})}_queueCallback(t,e,i=!0){_(t,e,i)}static getInstance(t){return M.get(o(t),this.DATA_KEY)}static getOrCreateInstance(t,e={}){return this.getInstance(t)||new this(t,&quot;object&quot;==typeof e?e:null)}static get VERSION(){return&quot;5.1.0&quot;}static get NAME(){throw new Error(&#39;You have to implement the static method &quot;NAME&quot;, for each component!&#39;)}static get DATA_KEY(){return&quot;bs.&quot;+this.NAME}static get EVENT_KEY(){return&quot;.&quot;+this.DATA_KEY}}const B=(t,e=&quot;hide&quot;)=&gt;{const n=&quot;click.dismiss&quot;+t.EVENT_KEY,s=t.NAME;P.on(document,n,`[data-bs-dismiss=&quot;${s}&quot;]`,(function(n){if([&quot;A&quot;,&quot;AREA&quot;].includes(this.tagName)&amp;&amp;n.preventDefault(),l(this))return;const o=i(this)||this.closest(&quot;.&quot;+s);t.getOrCreateInstance(o)[e]()}))};class R extends H{static get NAME(){return&quot;alert&quot;}close(){if(P.trigger(this._element,&quot;close.bs.alert&quot;).defaultPrevented)return;this._element.classList.remove(&quot;show&quot;);const t=this._element.classList.contains(&quot;fade&quot;);this._queueCallback(()=&gt;this._destroyElement(),this._element,t)}_destroyElement(){this._element.remove(),P.trigger(this._element,&quot;closed.bs.alert&quot;),this.dispose()}static jQueryInterface(t){return this.each((function(){const e=R.getOrCreateInstance(this);if(&quot;string&quot;==typeof t){if(void 0===e[t]||t.startsWith(&quot;_&quot;)||&quot;constructor&quot;===t)throw new TypeError(`No method named &quot;${t}&quot;`);e[t](this)}}))}}B(R,&quot;close&quot;),m(R);class W extends H{static get NAME(){return&quot;button&quot;}toggle(){this._element.setAttribute(&quot;aria-pressed&quot;,this._element.classList.toggle(&quot;active&quot;))}static jQueryInterface(t){return this.each((function(){const e=W.getOrCreateInstance(this);&quot;toggle&quot;===t&amp;&amp;e[t]()}))}}function z(t){return&quot;true&quot;===t||&quot;false&quot;!==t&amp;&amp;(t===Number(t).toString()?Number(t):&quot;&quot;===t||&quot;null&quot;===t?null:t)}function q(t){return t.replace(/[A-Z]/g,t=&gt;&quot;-&quot;+t.toLowerCase())}P.on(document,&quot;click.bs.button.data-api&quot;,&#39;[data-bs-toggle=&quot;button&quot;]&#39;,t=&gt;{t.preventDefault();const e=t.target.closest(&#39;[data-bs-toggle=&quot;button&quot;]&#39;);W.getOrCreateInstance(e).toggle()}),m(W);const F={setDataAttribute(t,e,i){t.setAttribute(&quot;data-bs-&quot;+q(e),i)},removeDataAttribute(t,e){t.removeAttribute(&quot;data-bs-&quot;+q(e))},getDataAttributes(t){if(!t)return{};const e={};return Object.keys(t.dataset).filter(t=&gt;t.startsWith(&quot;bs&quot;)).forEach(i=&gt;{let n=i.replace(/^bs/,&quot;&quot;);n=n.charAt(0).toLowerCase()+n.slice(1,n.length),e[n]=z(t.dataset[i])}),e},getDataAttribute:(t,e)=&gt;z(t.getAttribute(&quot;data-bs-&quot;+q(e))),offset(t){const e=t.getBoundingClientRect();return{top:e.top+window.pageYOffset,left:e.left+window.pageXOffset}},position:t=&gt;({top:t.offsetTop,left:t.offsetLeft})},U={find:(t,e=document.documentElement)=&gt;[].concat(...Element.prototype.querySelectorAll.call(e,t)),findOne:(t,e=document.documentElement)=&gt;Element.prototype.querySelector.call(e,t),children:(t,e)=&gt;[].concat(...t.children).filter(t=&gt;t.matches(e)),parents(t,e){const i=[];let n=t.parentNode;for(;n&amp;&amp;n.nodeType===Node.ELEMENT_NODE&amp;&amp;3!==n.nodeType;)n.matches(e)&amp;&amp;i.push(n),n=n.parentNode;return i},prev(t,e){let i=t.previousElementSibling;for(;i;){if(i.matches(e))return[i];i=i.previousElementSibling}return[]},next(t,e){let i=t.nextElementSibling;for(;i;){if(i.matches(e))return[i];i=i.nextElementSibling}return[]},focusableChildren(t){const e=[&quot;a&quot;,&quot;button&quot;,&quot;input&quot;,&quot;textarea&quot;,&quot;select&quot;,&quot;details&quot;,&quot;[tabindex]&quot;,&#39;[contenteditable=&quot;true&quot;]&#39;].map(t=&gt;t+&#39;:not([tabindex^=&quot;-&quot;])&#39;).join(&quot;, &quot;);return this.find(e,t).filter(t=&gt;!l(t)&amp;&amp;a(t))}},$={interval:5e3,keyboard:!0,slide:!1,pause:&quot;hover&quot;,wrap:!0,touch:!0},V={interval:&quot;(number|boolean)&quot;,keyboard:&quot;boolean&quot;,slide:&quot;(boolean|string)&quot;,pause:&quot;(string|boolean)&quot;,wrap:&quot;boolean&quot;,touch:&quot;boolean&quot;},K=&quot;next&quot;,X=&quot;prev&quot;,Y=&quot;left&quot;,Q=&quot;right&quot;,G={ArrowLeft:Q,ArrowRight:Y};class Z extends H{constructor(t,e){super(t),this._items=null,this._interval=null,this._activeElement=null,this._isPaused=!1,this._isSliding=!1,this.touchTimeout=null,this.touchStartX=0,this.touchDeltaX=0,this._config=this._getConfig(e),this._indicatorsElement=U.findOne(&quot;.carousel-indicators&quot;,this._element),this._touchSupported=&quot;ontouchstart&quot;in document.documentElement||navigator.maxTouchPoints&gt;0,this._pointerEvent=Boolean(window.PointerEvent),this._addEventListeners()}static get Default(){return $}static get NAME(){return&quot;carousel&quot;}next(){this._slide(K)}nextWhenVisible(){!document.hidden&amp;&amp;a(this._element)&amp;&amp;this.next()}prev(){this._slide(X)}pause(t){t||(this._isPaused=!0),U.findOne(&quot;.carousel-item-next, .carousel-item-prev&quot;,this._element)&amp;&amp;(n(this._element),this.cycle(!0)),clearInterval(this._interval),this._interval=null}cycle(t){t||(this._isPaused=!1),this._interval&amp;&amp;(clearInterval(this._interval),this._interval=null),this._config&amp;&amp;this._config.interval&amp;&amp;!this._isPaused&amp;&amp;(this._updateInterval(),this._interval=setInterval((document.visibilityState?this.nextWhenVisible:this.next).bind(this),this._config.interval))}to(t){this._activeElement=U.findOne(&quot;.active.carousel-item&quot;,this._element);const e=this._getItemIndex(this._activeElement);if(t&gt;this._items.length-1||t&lt;0)return;if(this._isSliding)return void P.one(this._element,&quot;slid.bs.carousel&quot;,()=&gt;this.to(t));if(e===t)return this.pause(),void this.cycle();const i=t&gt;e?K:X;this._slide(i,this._items[t])}_getConfig(t){return t={...$,...F.getDataAttributes(this._element),...&quot;object&quot;==typeof t?t:{}},r(&quot;carousel&quot;,t,V),t}_handleSwipe(){const t=Math.abs(this.touchDeltaX);if(t&lt;=40)return;const e=t/this.touchDeltaX;this.touchDeltaX=0,e&amp;&amp;this._slide(e&gt;0?Q:Y)}_addEventListeners(){this._config.keyboard&amp;&amp;P.on(this._element,&quot;keydown.bs.carousel&quot;,t=&gt;this._keydown(t)),&quot;hover&quot;===this._config.pause&amp;&amp;(P.on(this._element,&quot;mouseenter.bs.carousel&quot;,t=&gt;this.pause(t)),P.on(this._element,&quot;mouseleave.bs.carousel&quot;,t=&gt;this.cycle(t))),this._config.touch&amp;&amp;this._touchSupported&amp;&amp;this._addTouchEventListeners()}_addTouchEventListeners(){const t=t=&gt;{!this._pointerEvent||&quot;pen&quot;!==t.pointerType&amp;&amp;&quot;touch&quot;!==t.pointerType?this._pointerEvent||(this.touchStartX=t.touches[0].clientX):this.touchStartX=t.clientX},e=t=&gt;{this.touchDeltaX=t.touches&amp;&amp;t.touches.length&gt;1?0:t.touches[0].clientX-this.touchStartX},i=t=&gt;{!this._pointerEvent||&quot;pen&quot;!==t.pointerType&amp;&amp;&quot;touch&quot;!==t.pointerType||(this.touchDeltaX=t.clientX-this.touchStartX),this._handleSwipe(),&quot;hover&quot;===this._config.pause&amp;&amp;(this.pause(),this.touchTimeout&amp;&amp;clearTimeout(this.touchTimeout),this.touchTimeout=setTimeout(t=&gt;this.cycle(t),500+this._config.interval))};U.find(&quot;.carousel-item img&quot;,this._element).forEach(t=&gt;{P.on(t,&quot;dragstart.bs.carousel&quot;,t=&gt;t.preventDefault())}),this._pointerEvent?(P.on(this._element,&quot;pointerdown.bs.carousel&quot;,e=&gt;t(e)),P.on(this._element,&quot;pointerup.bs.carousel&quot;,t=&gt;i(t)),this._element.classList.add(&quot;pointer-event&quot;)):(P.on(this._element,&quot;touchstart.bs.carousel&quot;,e=&gt;t(e)),P.on(this._element,&quot;touchmove.bs.carousel&quot;,t=&gt;e(t)),P.on(this._element,&quot;touchend.bs.carousel&quot;,t=&gt;i(t)))}_keydown(t){if(/input|textarea/i.test(t.target.tagName))return;const e=G[t.key];e&amp;&amp;(t.preventDefault(),this._slide(e))}_getItemIndex(t){return this._items=t&amp;&amp;t.parentNode?U.find(&quot;.carousel-item&quot;,t.parentNode):[],this._items.indexOf(t)}_getItemByOrder(t,e){const i=t===K;return b(this._items,e,i,this._config.wrap)}_triggerSlideEvent(t,e){const i=this._getItemIndex(t),n=this._getItemIndex(U.findOne(&quot;.active.carousel-item&quot;,this._element));return P.trigger(this._element,&quot;slide.bs.carousel&quot;,{relatedTarget:t,direction:e,from:n,to:i})}_setActiveIndicatorElement(t){if(this._indicatorsElement){const e=U.findOne(&quot;.active&quot;,this._indicatorsElement);e.classList.remove(&quot;active&quot;),e.removeAttribute(&quot;aria-current&quot;);const i=U.find(&quot;[data-bs-target]&quot;,this._indicatorsElement);for(let e=0;e&lt;i.length;e++)if(Number.parseInt(i[e].getAttribute(&quot;data-bs-slide-to&quot;),10)===this._getItemIndex(t)){i[e].classList.add(&quot;active&quot;),i[e].setAttribute(&quot;aria-current&quot;,&quot;true&quot;);break}}}_updateInterval(){const t=this._activeElement||U.findOne(&quot;.active.carousel-item&quot;,this._element);if(!t)return;const e=Number.parseInt(t.getAttribute(&quot;data-bs-interval&quot;),10);e?(this._config.defaultInterval=this._config.defaultInterval||this._config.interval,this._config.interval=e):this._config.interval=this._config.defaultInterval||this._config.interval}_slide(t,e){const i=this._directionToOrder(t),n=U.findOne(&quot;.active.carousel-item&quot;,this._element),s=this._getItemIndex(n),o=e||this._getItemByOrder(i,n),r=this._getItemIndex(o),a=Boolean(this._interval),l=i===K,c=l?&quot;carousel-item-start&quot;:&quot;carousel-item-end&quot;,h=l?&quot;carousel-item-next&quot;:&quot;carousel-item-prev&quot;,u=this._orderToDirection(i);if(o&amp;&amp;o.classList.contains(&quot;active&quot;))return void(this._isSliding=!1);if(this._isSliding)return;if(this._triggerSlideEvent(o,u).defaultPrevented)return;if(!n||!o)return;this._isSliding=!0,a&amp;&amp;this.pause(),this._setActiveIndicatorElement(o),this._activeElement=o;const f=()=&gt;{P.trigger(this._element,&quot;slid.bs.carousel&quot;,{relatedTarget:o,direction:u,from:s,to:r})};if(this._element.classList.contains(&quot;slide&quot;)){o.classList.add(h),d(o),n.classList.add(c),o.classList.add(c);const t=()=&gt;{o.classList.remove(c,h),o.classList.add(&quot;active&quot;),n.classList.remove(&quot;active&quot;,h,c),this._isSliding=!1,setTimeout(f,0)};this._queueCallback(t,n,!0)}else n.classList.remove(&quot;active&quot;),o.classList.add(&quot;active&quot;),this._isSliding=!1,f();a&amp;&amp;this.cycle()}_directionToOrder(t){return[Q,Y].includes(t)?p()?t===Y?X:K:t===Y?K:X:t}_orderToDirection(t){return[K,X].includes(t)?p()?t===X?Y:Q:t===X?Q:Y:t}static carouselInterface(t,e){const i=Z.getOrCreateInstance(t,e);let{_config:n}=i;&quot;object&quot;==typeof e&amp;&amp;(n={...n,...e});const s=&quot;string&quot;==typeof e?e:n.slide;if(&quot;number&quot;==typeof e)i.to(e);else if(&quot;string&quot;==typeof s){if(void 0===i[s])throw new TypeError(`No method named &quot;${s}&quot;`);i[s]()}else n.interval&amp;&amp;n.ride&amp;&amp;(i.pause(),i.cycle())}static jQueryInterface(t){return this.each((function(){Z.carouselInterface(this,t)}))}static dataApiClickHandler(t){const e=i(this);if(!e||!e.classList.contains(&quot;carousel&quot;))return;const n={...F.getDataAttributes(e),...F.getDataAttributes(this)},s=this.getAttribute(&quot;data-bs-slide-to&quot;);s&amp;&amp;(n.interval=!1),Z.carouselInterface(e,n),s&amp;&amp;Z.getInstance(e).to(s),t.preventDefault()}}P.on(document,&quot;click.bs.carousel.data-api&quot;,&quot;[data-bs-slide], [data-bs-slide-to]&quot;,Z.dataApiClickHandler),P.on(window,&quot;load.bs.carousel.data-api&quot;,()=&gt;{const t=U.find(&#39;[data-bs-ride=&quot;carousel&quot;]&#39;);for(let e=0,i=t.length;e&lt;i;e++)Z.carouselInterface(t[e],Z.getInstance(t[e]))}),m(Z);const J={toggle:!0,parent:null},tt={toggle:&quot;boolean&quot;,parent:&quot;(null|element)&quot;};class et extends H{constructor(t,i){super(t),this._isTransitioning=!1,this._config=this._getConfig(i),this._triggerArray=[];const n=U.find(&#39;[data-bs-toggle=&quot;collapse&quot;]&#39;);for(let t=0,i=n.length;t&lt;i;t++){const i=n[t],s=e(i),o=U.find(s).filter(t=&gt;t===this._element);null!==s&amp;&amp;o.length&amp;&amp;(this._selector=s,this._triggerArray.push(i))}this._initializeChildren(),this._config.parent||this._addAriaAndCollapsedClass(this._triggerArray,this._isShown()),this._config.toggle&amp;&amp;this.toggle()}static get Default(){return J}static get NAME(){return&quot;collapse&quot;}toggle(){this._isShown()?this.hide():this.show()}show(){if(this._isTransitioning||this._isShown())return;let t,e=[];if(this._config.parent){const t=U.find(&quot;.collapse .collapse&quot;,this._config.parent);e=U.find(&quot;.show, .collapsing&quot;,this._config.parent).filter(e=&gt;!t.includes(e))}const i=U.findOne(this._selector);if(e.length){const n=e.find(t=&gt;i!==t);if(t=n?et.getInstance(n):null,t&amp;&amp;t._isTransitioning)return}if(P.trigger(this._element,&quot;show.bs.collapse&quot;).defaultPrevented)return;e.forEach(e=&gt;{i!==e&amp;&amp;et.getOrCreateInstance(e,{toggle:!1}).hide(),t||M.set(e,&quot;bs.collapse&quot;,null)});const n=this._getDimension();this._element.classList.remove(&quot;collapse&quot;),this._element.classList.add(&quot;collapsing&quot;),this._element.style[n]=0,this._addAriaAndCollapsedClass(this._triggerArray,!0),this._isTransitioning=!0;const s=&quot;scroll&quot;+(n[0].toUpperCase()+n.slice(1));this._queueCallback(()=&gt;{this._isTransitioning=!1,this._element.classList.remove(&quot;collapsing&quot;),this._element.classList.add(&quot;collapse&quot;,&quot;show&quot;),this._element.style[n]=&quot;&quot;,P.trigger(this._element,&quot;shown.bs.collapse&quot;)},this._element,!0),this._element.style[n]=this._element[s]+&quot;px&quot;}hide(){if(this._isTransitioning||!this._isShown())return;if(P.trigger(this._element,&quot;hide.bs.collapse&quot;).defaultPrevented)return;const t=this._getDimension();this._element.style[t]=this._element.getBoundingClientRect()[t]+&quot;px&quot;,d(this._element),this._element.classList.add(&quot;collapsing&quot;),this._element.classList.remove(&quot;collapse&quot;,&quot;show&quot;);const e=this._triggerArray.length;for(let t=0;t&lt;e;t++){const e=this._triggerArray[t],n=i(e);n&amp;&amp;!this._isShown(n)&amp;&amp;this._addAriaAndCollapsedClass([e],!1)}this._isTransitioning=!0,this._element.style[t]=&quot;&quot;,this._queueCallback(()=&gt;{this._isTransitioning=!1,this._element.classList.remove(&quot;collapsing&quot;),this._element.classList.add(&quot;collapse&quot;),P.trigger(this._element,&quot;hidden.bs.collapse&quot;)},this._element,!0)}_isShown(t=this._element){return t.classList.contains(&quot;show&quot;)}_getConfig(t){return(t={...J,...F.getDataAttributes(this._element),...t}).toggle=Boolean(t.toggle),t.parent=o(t.parent),r(&quot;collapse&quot;,t,tt),t}_getDimension(){return this._element.classList.contains(&quot;collapse-horizontal&quot;)?&quot;width&quot;:&quot;height&quot;}_initializeChildren(){if(!this._config.parent)return;const t=U.find(&quot;.collapse .collapse&quot;,this._config.parent);U.find(&#39;[data-bs-toggle=&quot;collapse&quot;]&#39;,this._config.parent).filter(e=&gt;!t.includes(e)).forEach(t=&gt;{const e=i(t);e&amp;&amp;this._addAriaAndCollapsedClass([t],this._isShown(e))})}_addAriaAndCollapsedClass(t,e){t.length&amp;&amp;t.forEach(t=&gt;{e?t.classList.remove(&quot;collapsed&quot;):t.classList.add(&quot;collapsed&quot;),t.setAttribute(&quot;aria-expanded&quot;,e)})}static jQueryInterface(t){return this.each((function(){const e={};&quot;string&quot;==typeof t&amp;&amp;/show|hide/.test(t)&amp;&amp;(e.toggle=!1);const i=et.getOrCreateInstance(this,e);if(&quot;string&quot;==typeof t){if(void 0===i[t])throw new TypeError(`No method named &quot;${t}&quot;`);i[t]()}}))}}P.on(document,&quot;click.bs.collapse.data-api&quot;,&#39;[data-bs-toggle=&quot;collapse&quot;]&#39;,(function(t){(&quot;A&quot;===t.target.tagName||t.delegateTarget&amp;&amp;&quot;A&quot;===t.delegateTarget.tagName)&amp;&amp;t.preventDefault();const i=e(this);U.find(i).forEach(t=&gt;{et.getOrCreateInstance(t,{toggle:!1}).toggle()})})),m(et);var it=&quot;top&quot;,nt=&quot;bottom&quot;,st=&quot;right&quot;,ot=&quot;left&quot;,rt=[it,nt,st,ot],at=rt.reduce((function(t,e){return t.concat([e+&quot;-start&quot;,e+&quot;-end&quot;])}),[]),lt=[].concat(rt,[&quot;auto&quot;]).reduce((function(t,e){return t.concat([e,e+&quot;-start&quot;,e+&quot;-end&quot;])}),[]),ct=[&quot;beforeRead&quot;,&quot;read&quot;,&quot;afterRead&quot;,&quot;beforeMain&quot;,&quot;main&quot;,&quot;afterMain&quot;,&quot;beforeWrite&quot;,&quot;write&quot;,&quot;afterWrite&quot;];function ht(t){return t?(t.nodeName||&quot;&quot;).toLowerCase():null}function dt(t){if(null==t)return window;if(&quot;[object Window]&quot;!==t.toString()){var e=t.ownerDocument;return e&amp;&amp;e.defaultView||window}return t}function ut(t){return t instanceof dt(t).Element||t instanceof Element}function ft(t){return t instanceof dt(t).HTMLElement||t instanceof HTMLElement}function pt(t){return&quot;undefined&quot;!=typeof ShadowRoot&amp;&amp;(t instanceof dt(t).ShadowRoot||t instanceof ShadowRoot)}var mt={name:&quot;applyStyles&quot;,enabled:!0,phase:&quot;write&quot;,fn:function(t){var e=t.state;Object.keys(e.elements).forEach((function(t){var i=e.styles[t]||{},n=e.attributes[t]||{},s=e.elements[t];ft(s)&amp;&amp;ht(s)&amp;&amp;(Object.assign(s.style,i),Object.keys(n).forEach((function(t){var e=n[t];!1===e?s.removeAttribute(t):s.setAttribute(t,!0===e?&quot;&quot;:e)})))}))},effect:function(t){var e=t.state,i={popper:{position:e.options.strategy,left:&quot;0&quot;,top:&quot;0&quot;,margin:&quot;0&quot;},arrow:{position:&quot;absolute&quot;},reference:{}};return Object.assign(e.elements.popper.style,i.popper),e.styles=i,e.elements.arrow&amp;&amp;Object.assign(e.elements.arrow.style,i.arrow),function(){Object.keys(e.elements).forEach((function(t){var n=e.elements[t],s=e.attributes[t]||{},o=Object.keys(e.styles.hasOwnProperty(t)?e.styles[t]:i[t]).reduce((function(t,e){return t[e]=&quot;&quot;,t}),{});ft(n)&amp;&amp;ht(n)&amp;&amp;(Object.assign(n.style,o),Object.keys(s).forEach((function(t){n.removeAttribute(t)})))}))}},requires:[&quot;computeStyles&quot;]};function gt(t){return t.split(&quot;-&quot;)[0]}var _t=Math.round;function bt(t,e){void 0===e&amp;&amp;(e=!1);var i=t.getBoundingClientRect(),n=1,s=1;return ft(t)&amp;&amp;e&amp;&amp;(n=i.width/t.offsetWidth||1,s=i.height/t.offsetHeight||1),{width:_t(i.width/n),height:_t(i.height/s),top:_t(i.top/s),right:_t(i.right/n),bottom:_t(i.bottom/s),left:_t(i.left/n),x:_t(i.left/n),y:_t(i.top/s)}}function vt(t){var e=bt(t),i=t.offsetWidth,n=t.offsetHeight;return Math.abs(e.width-i)&lt;=1&amp;&amp;(i=e.width),Math.abs(e.height-n)&lt;=1&amp;&amp;(n=e.height),{x:t.offsetLeft,y:t.offsetTop,width:i,height:n}}function yt(t,e){var i=e.getRootNode&amp;&amp;e.getRootNode();if(t.contains(e))return!0;if(i&amp;&amp;pt(i)){var n=e;do{if(n&amp;&amp;t.isSameNode(n))return!0;n=n.parentNode||n.host}while(n)}return!1}function wt(t){return dt(t).getComputedStyle(t)}function Et(t){return[&quot;table&quot;,&quot;td&quot;,&quot;th&quot;].indexOf(ht(t))&gt;=0}function At(t){return((ut(t)?t.ownerDocument:t.document)||window.document).documentElement}function Tt(t){return&quot;html&quot;===ht(t)?t:t.assignedSlot||t.parentNode||(pt(t)?t.host:null)||At(t)}function Ot(t){return ft(t)&amp;&amp;&quot;fixed&quot;!==wt(t).position?t.offsetParent:null}function Ct(t){for(var e=dt(t),i=Ot(t);i&amp;&amp;Et(i)&amp;&amp;&quot;static&quot;===wt(i).position;)i=Ot(i);return i&amp;&amp;(&quot;html&quot;===ht(i)||&quot;body&quot;===ht(i)&amp;&amp;&quot;static&quot;===wt(i).position)?e:i||function(t){var e=-1!==navigator.userAgent.toLowerCase().indexOf(&quot;firefox&quot;);if(-1!==navigator.userAgent.indexOf(&quot;Trident&quot;)&amp;&amp;ft(t)&amp;&amp;&quot;fixed&quot;===wt(t).position)return null;for(var i=Tt(t);ft(i)&amp;&amp;[&quot;html&quot;,&quot;body&quot;].indexOf(ht(i))&lt;0;){var n=wt(i);if(&quot;none&quot;!==n.transform||&quot;none&quot;!==n.perspective||&quot;paint&quot;===n.contain||-1!==[&quot;transform&quot;,&quot;perspective&quot;].indexOf(n.willChange)||e&amp;&amp;&quot;filter&quot;===n.willChange||e&amp;&amp;n.filter&amp;&amp;&quot;none&quot;!==n.filter)return i;i=i.parentNode}return null}(t)||e}function kt(t){return[&quot;top&quot;,&quot;bottom&quot;].indexOf(t)&gt;=0?&quot;x&quot;:&quot;y&quot;}var Lt=Math.max,xt=Math.min,Dt=Math.round;function St(t,e,i){return Lt(t,xt(e,i))}function Nt(t){return Object.assign({},{top:0,right:0,bottom:0,left:0},t)}function It(t,e){return e.reduce((function(e,i){return e[i]=t,e}),{})}var Pt={name:&quot;arrow&quot;,enabled:!0,phase:&quot;main&quot;,fn:function(t){var e,i=t.state,n=t.name,s=t.options,o=i.elements.arrow,r=i.modifiersData.popperOffsets,a=gt(i.placement),l=kt(a),c=[ot,st].indexOf(a)&gt;=0?&quot;height&quot;:&quot;width&quot;;if(o&amp;&amp;r){var h=function(t,e){return Nt(&quot;number&quot;!=typeof(t=&quot;function&quot;==typeof t?t(Object.assign({},e.rects,{placement:e.placement})):t)?t:It(t,rt))}(s.padding,i),d=vt(o),u=&quot;y&quot;===l?it:ot,f=&quot;y&quot;===l?nt:st,p=i.rects.reference[c]+i.rects.reference[l]-r[l]-i.rects.popper[c],m=r[l]-i.rects.reference[l],g=Ct(o),_=g?&quot;y&quot;===l?g.clientHeight||0:g.clientWidth||0:0,b=p/2-m/2,v=h[u],y=_-d[c]-h[f],w=_/2-d[c]/2+b,E=St(v,w,y),A=l;i.modifiersData[n]=((e={})[A]=E,e.centerOffset=E-w,e)}},effect:function(t){var e=t.state,i=t.options.element,n=void 0===i?&quot;[data-popper-arrow]&quot;:i;null!=n&amp;&amp;(&quot;string&quot;!=typeof n||(n=e.elements.popper.querySelector(n)))&amp;&amp;yt(e.elements.popper,n)&amp;&amp;(e.elements.arrow=n)},requires:[&quot;popperOffsets&quot;],requiresIfExists:[&quot;preventOverflow&quot;]},jt={top:&quot;auto&quot;,right:&quot;auto&quot;,bottom:&quot;auto&quot;,left:&quot;auto&quot;};function Mt(t){var e,i=t.popper,n=t.popperRect,s=t.placement,o=t.offsets,r=t.position,a=t.gpuAcceleration,l=t.adaptive,c=t.roundOffsets,h=!0===c?function(t){var e=t.x,i=t.y,n=window.devicePixelRatio||1;return{x:Dt(Dt(e*n)/n)||0,y:Dt(Dt(i*n)/n)||0}}(o):&quot;function&quot;==typeof c?c(o):o,d=h.x,u=void 0===d?0:d,f=h.y,p=void 0===f?0:f,m=o.hasOwnProperty(&quot;x&quot;),g=o.hasOwnProperty(&quot;y&quot;),_=ot,b=it,v=window;if(l){var y=Ct(i),w=&quot;clientHeight&quot;,E=&quot;clientWidth&quot;;y===dt(i)&amp;&amp;&quot;static&quot;!==wt(y=At(i)).position&amp;&amp;(w=&quot;scrollHeight&quot;,E=&quot;scrollWidth&quot;),y=y,s===it&amp;&amp;(b=nt,p-=y[w]-n.height,p*=a?1:-1),s===ot&amp;&amp;(_=st,u-=y[E]-n.width,u*=a?1:-1)}var A,T=Object.assign({position:r},l&amp;&amp;jt);return a?Object.assign({},T,((A={})[b]=g?&quot;0&quot;:&quot;&quot;,A[_]=m?&quot;0&quot;:&quot;&quot;,A.transform=(v.devicePixelRatio||1)&lt;2?&quot;translate(&quot;+u+&quot;px, &quot;+p+&quot;px)&quot;:&quot;translate3d(&quot;+u+&quot;px, &quot;+p+&quot;px, 0)&quot;,A)):Object.assign({},T,((e={})[b]=g?p+&quot;px&quot;:&quot;&quot;,e[_]=m?u+&quot;px&quot;:&quot;&quot;,e.transform=&quot;&quot;,e))}var Ht={name:&quot;computeStyles&quot;,enabled:!0,phase:&quot;beforeWrite&quot;,fn:function(t){var e=t.state,i=t.options,n=i.gpuAcceleration,s=void 0===n||n,o=i.adaptive,r=void 0===o||o,a=i.roundOffsets,l=void 0===a||a,c={placement:gt(e.placement),popper:e.elements.popper,popperRect:e.rects.popper,gpuAcceleration:s};null!=e.modifiersData.popperOffsets&amp;&amp;(e.styles.popper=Object.assign({},e.styles.popper,Mt(Object.assign({},c,{offsets:e.modifiersData.popperOffsets,position:e.options.strategy,adaptive:r,roundOffsets:l})))),null!=e.modifiersData.arrow&amp;&amp;(e.styles.arrow=Object.assign({},e.styles.arrow,Mt(Object.assign({},c,{offsets:e.modifiersData.arrow,position:&quot;absolute&quot;,adaptive:!1,roundOffsets:l})))),e.attributes.popper=Object.assign({},e.attributes.popper,{&quot;data-popper-placement&quot;:e.placement})},data:{}},Bt={passive:!0},Rt={name:&quot;eventListeners&quot;,enabled:!0,phase:&quot;write&quot;,fn:function(){},effect:function(t){var e=t.state,i=t.instance,n=t.options,s=n.scroll,o=void 0===s||s,r=n.resize,a=void 0===r||r,l=dt(e.elements.popper),c=[].concat(e.scrollParents.reference,e.scrollParents.popper);return o&amp;&amp;c.forEach((function(t){t.addEventListener(&quot;scroll&quot;,i.update,Bt)})),a&amp;&amp;l.addEventListener(&quot;resize&quot;,i.update,Bt),function(){o&amp;&amp;c.forEach((function(t){t.removeEventListener(&quot;scroll&quot;,i.update,Bt)})),a&amp;&amp;l.removeEventListener(&quot;resize&quot;,i.update,Bt)}},data:{}},Wt={left:&quot;right&quot;,right:&quot;left&quot;,bottom:&quot;top&quot;,top:&quot;bottom&quot;};function zt(t){return t.replace(/left|right|bottom|top/g,(function(t){return Wt[t]}))}var qt={start:&quot;end&quot;,end:&quot;start&quot;};function Ft(t){return t.replace(/start|end/g,(function(t){return qt[t]}))}function Ut(t){var e=dt(t);return{scrollLeft:e.pageXOffset,scrollTop:e.pageYOffset}}function $t(t){return bt(At(t)).left+Ut(t).scrollLeft}function Vt(t){var e=wt(t),i=e.overflow,n=e.overflowX,s=e.overflowY;return/auto|scroll|overlay|hidden/.test(i+s+n)}function Kt(t,e){var i;void 0===e&amp;&amp;(e=[]);var n=function t(e){return[&quot;html&quot;,&quot;body&quot;,&quot;#document&quot;].indexOf(ht(e))&gt;=0?e.ownerDocument.body:ft(e)&amp;&amp;Vt(e)?e:t(Tt(e))}(t),s=n===(null==(i=t.ownerDocument)?void 0:i.body),o=dt(n),r=s?[o].concat(o.visualViewport||[],Vt(n)?n:[]):n,a=e.concat(r);return s?a:a.concat(Kt(Tt(r)))}function Xt(t){return Object.assign({},t,{left:t.x,top:t.y,right:t.x+t.width,bottom:t.y+t.height})}function Yt(t,e){return&quot;viewport&quot;===e?Xt(function(t){var e=dt(t),i=At(t),n=e.visualViewport,s=i.clientWidth,o=i.clientHeight,r=0,a=0;return n&amp;&amp;(s=n.width,o=n.height,/^((?!chrome|android).)*safari/i.test(navigator.userAgent)||(r=n.offsetLeft,a=n.offsetTop)),{width:s,height:o,x:r+$t(t),y:a}}(t)):ft(e)?function(t){var e=bt(t);return e.top=e.top+t.clientTop,e.left=e.left+t.clientLeft,e.bottom=e.top+t.clientHeight,e.right=e.left+t.clientWidth,e.width=t.clientWidth,e.height=t.clientHeight,e.x=e.left,e.y=e.top,e}(e):Xt(function(t){var e,i=At(t),n=Ut(t),s=null==(e=t.ownerDocument)?void 0:e.body,o=Lt(i.scrollWidth,i.clientWidth,s?s.scrollWidth:0,s?s.clientWidth:0),r=Lt(i.scrollHeight,i.clientHeight,s?s.scrollHeight:0,s?s.clientHeight:0),a=-n.scrollLeft+$t(t),l=-n.scrollTop;return&quot;rtl&quot;===wt(s||i).direction&amp;&amp;(a+=Lt(i.clientWidth,s?s.clientWidth:0)-o),{width:o,height:r,x:a,y:l}}(At(t)))}function Qt(t){return t.split(&quot;-&quot;)[1]}function Gt(t){var e,i=t.reference,n=t.element,s=t.placement,o=s?gt(s):null,r=s?Qt(s):null,a=i.x+i.width/2-n.width/2,l=i.y+i.height/2-n.height/2;switch(o){case it:e={x:a,y:i.y-n.height};break;case nt:e={x:a,y:i.y+i.height};break;case st:e={x:i.x+i.width,y:l};break;case ot:e={x:i.x-n.width,y:l};break;default:e={x:i.x,y:i.y}}var c=o?kt(o):null;if(null!=c){var h=&quot;y&quot;===c?&quot;height&quot;:&quot;width&quot;;switch(r){case&quot;start&quot;:e[c]=e[c]-(i[h]/2-n[h]/2);break;case&quot;end&quot;:e[c]=e[c]+(i[h]/2-n[h]/2)}}return e}function Zt(t,e){void 0===e&amp;&amp;(e={});var i=e,n=i.placement,s=void 0===n?t.placement:n,o=i.boundary,r=void 0===o?&quot;clippingParents&quot;:o,a=i.rootBoundary,l=void 0===a?&quot;viewport&quot;:a,c=i.elementContext,h=void 0===c?&quot;popper&quot;:c,d=i.altBoundary,u=void 0!==d&amp;&amp;d,f=i.padding,p=void 0===f?0:f,m=Nt(&quot;number&quot;!=typeof p?p:It(p,rt)),g=&quot;popper&quot;===h?&quot;reference&quot;:&quot;popper&quot;,_=t.elements.reference,b=t.rects.popper,v=t.elements[u?g:h],y=function(t,e,i){var n=&quot;clippingParents&quot;===e?function(t){var e=Kt(Tt(t)),i=[&quot;absolute&quot;,&quot;fixed&quot;].indexOf(wt(t).position)&gt;=0&amp;&amp;ft(t)?Ct(t):t;return ut(i)?e.filter((function(t){return ut(t)&amp;&amp;yt(t,i)&amp;&amp;&quot;body&quot;!==ht(t)})):[]}(t):[].concat(e),s=[].concat(n,[i]),o=s[0],r=s.reduce((function(e,i){var n=Yt(t,i);return e.top=Lt(n.top,e.top),e.right=xt(n.right,e.right),e.bottom=xt(n.bottom,e.bottom),e.left=Lt(n.left,e.left),e}),Yt(t,o));return r.width=r.right-r.left,r.height=r.bottom-r.top,r.x=r.left,r.y=r.top,r}(ut(v)?v:v.contextElement||At(t.elements.popper),r,l),w=bt(_),E=Gt({reference:w,element:b,strategy:&quot;absolute&quot;,placement:s}),A=Xt(Object.assign({},b,E)),T=&quot;popper&quot;===h?A:w,O={top:y.top-T.top+m.top,bottom:T.bottom-y.bottom+m.bottom,left:y.left-T.left+m.left,right:T.right-y.right+m.right},C=t.modifiersData.offset;if(&quot;popper&quot;===h&amp;&amp;C){var k=C[s];Object.keys(O).forEach((function(t){var e=[st,nt].indexOf(t)&gt;=0?1:-1,i=[it,nt].indexOf(t)&gt;=0?&quot;y&quot;:&quot;x&quot;;O[t]+=k[i]*e}))}return O}function Jt(t,e){void 0===e&amp;&amp;(e={});var i=e,n=i.placement,s=i.boundary,o=i.rootBoundary,r=i.padding,a=i.flipVariations,l=i.allowedAutoPlacements,c=void 0===l?lt:l,h=Qt(n),d=h?a?at:at.filter((function(t){return Qt(t)===h})):rt,u=d.filter((function(t){return c.indexOf(t)&gt;=0}));0===u.length&amp;&amp;(u=d);var f=u.reduce((function(e,i){return e[i]=Zt(t,{placement:i,boundary:s,rootBoundary:o,padding:r})[gt(i)],e}),{});return Object.keys(f).sort((function(t,e){return f[t]-f[e]}))}var te={name:&quot;flip&quot;,enabled:!0,phase:&quot;main&quot;,fn:function(t){var e=t.state,i=t.options,n=t.name;if(!e.modifiersData[n]._skip){for(var s=i.mainAxis,o=void 0===s||s,r=i.altAxis,a=void 0===r||r,l=i.fallbackPlacements,c=i.padding,h=i.boundary,d=i.rootBoundary,u=i.altBoundary,f=i.flipVariations,p=void 0===f||f,m=i.allowedAutoPlacements,g=e.options.placement,_=gt(g),b=l||(_!==g&amp;&amp;p?function(t){if(&quot;auto&quot;===gt(t))return[];var e=zt(t);return[Ft(t),e,Ft(e)]}(g):[zt(g)]),v=[g].concat(b).reduce((function(t,i){return t.concat(&quot;auto&quot;===gt(i)?Jt(e,{placement:i,boundary:h,rootBoundary:d,padding:c,flipVariations:p,allowedAutoPlacements:m}):i)}),[]),y=e.rects.reference,w=e.rects.popper,E=new Map,A=!0,T=v[0],O=0;O&lt;v.length;O++){var C=v[O],k=gt(C),L=&quot;start&quot;===Qt(C),x=[it,nt].indexOf(k)&gt;=0,D=x?&quot;width&quot;:&quot;height&quot;,S=Zt(e,{placement:C,boundary:h,rootBoundary:d,altBoundary:u,padding:c}),N=x?L?st:ot:L?nt:it;y[D]&gt;w[D]&amp;&amp;(N=zt(N));var I=zt(N),P=[];if(o&amp;&amp;P.push(S[k]&lt;=0),a&amp;&amp;P.push(S[N]&lt;=0,S[I]&lt;=0),P.every((function(t){return t}))){T=C,A=!1;break}E.set(C,P)}if(A)for(var j=function(t){var e=v.find((function(e){var i=E.get(e);if(i)return i.slice(0,t).every((function(t){return t}))}));if(e)return T=e,&quot;break&quot;},M=p?3:1;M&gt;0&amp;&amp;&quot;break&quot;!==j(M);M--);e.placement!==T&amp;&amp;(e.modifiersData[n]._skip=!0,e.placement=T,e.reset=!0)}},requiresIfExists:[&quot;offset&quot;],data:{_skip:!1}};function ee(t,e,i){return void 0===i&amp;&amp;(i={x:0,y:0}),{top:t.top-e.height-i.y,right:t.right-e.width+i.x,bottom:t.bottom-e.height+i.y,left:t.left-e.width-i.x}}function ie(t){return[it,st,nt,ot].some((function(e){return t[e]&gt;=0}))}var ne={name:&quot;hide&quot;,enabled:!0,phase:&quot;main&quot;,requiresIfExists:[&quot;preventOverflow&quot;],fn:function(t){var e=t.state,i=t.name,n=e.rects.reference,s=e.rects.popper,o=e.modifiersData.preventOverflow,r=Zt(e,{elementContext:&quot;reference&quot;}),a=Zt(e,{altBoundary:!0}),l=ee(r,n),c=ee(a,s,o),h=ie(l),d=ie(c);e.modifiersData[i]={referenceClippingOffsets:l,popperEscapeOffsets:c,isReferenceHidden:h,hasPopperEscaped:d},e.attributes.popper=Object.assign({},e.attributes.popper,{&quot;data-popper-reference-hidden&quot;:h,&quot;data-popper-escaped&quot;:d})}},se={name:&quot;offset&quot;,enabled:!0,phase:&quot;main&quot;,requires:[&quot;popperOffsets&quot;],fn:function(t){var e=t.state,i=t.options,n=t.name,s=i.offset,o=void 0===s?[0,0]:s,r=lt.reduce((function(t,i){return t[i]=function(t,e,i){var n=gt(t),s=[ot,it].indexOf(n)&gt;=0?-1:1,o=&quot;function&quot;==typeof i?i(Object.assign({},e,{placement:t})):i,r=o[0],a=o[1];return r=r||0,a=(a||0)*s,[ot,st].indexOf(n)&gt;=0?{x:a,y:r}:{x:r,y:a}}(i,e.rects,o),t}),{}),a=r[e.placement],l=a.x,c=a.y;null!=e.modifiersData.popperOffsets&amp;&amp;(e.modifiersData.popperOffsets.x+=l,e.modifiersData.popperOffsets.y+=c),e.modifiersData[n]=r}},oe={name:&quot;popperOffsets&quot;,enabled:!0,phase:&quot;read&quot;,fn:function(t){var e=t.state,i=t.name;e.modifiersData[i]=Gt({reference:e.rects.reference,element:e.rects.popper,strategy:&quot;absolute&quot;,placement:e.placement})},data:{}},re={name:&quot;preventOverflow&quot;,enabled:!0,phase:&quot;main&quot;,fn:function(t){var e=t.state,i=t.options,n=t.name,s=i.mainAxis,o=void 0===s||s,r=i.altAxis,a=void 0!==r&amp;&amp;r,l=i.boundary,c=i.rootBoundary,h=i.altBoundary,d=i.padding,u=i.tether,f=void 0===u||u,p=i.tetherOffset,m=void 0===p?0:p,g=Zt(e,{boundary:l,rootBoundary:c,padding:d,altBoundary:h}),_=gt(e.placement),b=Qt(e.placement),v=!b,y=kt(_),w=&quot;x&quot;===y?&quot;y&quot;:&quot;x&quot;,E=e.modifiersData.popperOffsets,A=e.rects.reference,T=e.rects.popper,O=&quot;function&quot;==typeof m?m(Object.assign({},e.rects,{placement:e.placement})):m,C={x:0,y:0};if(E){if(o||a){var k=&quot;y&quot;===y?it:ot,L=&quot;y&quot;===y?nt:st,x=&quot;y&quot;===y?&quot;height&quot;:&quot;width&quot;,D=E[y],S=E[y]+g[k],N=E[y]-g[L],I=f?-T[x]/2:0,P=&quot;start&quot;===b?A[x]:T[x],j=&quot;start&quot;===b?-T[x]:-A[x],M=e.elements.arrow,H=f&amp;&amp;M?vt(M):{width:0,height:0},B=e.modifiersData[&quot;arrow#persistent&quot;]?e.modifiersData[&quot;arrow#persistent&quot;].padding:{top:0,right:0,bottom:0,left:0},R=B[k],W=B[L],z=St(0,A[x],H[x]),q=v?A[x]/2-I-z-R-O:P-z-R-O,F=v?-A[x]/2+I+z+W+O:j+z+W+O,U=e.elements.arrow&amp;&amp;Ct(e.elements.arrow),$=U?&quot;y&quot;===y?U.clientTop||0:U.clientLeft||0:0,V=e.modifiersData.offset?e.modifiersData.offset[e.placement][y]:0,K=E[y]+q-V-$,X=E[y]+F-V;if(o){var Y=St(f?xt(S,K):S,D,f?Lt(N,X):N);E[y]=Y,C[y]=Y-D}if(a){var Q=&quot;x&quot;===y?it:ot,G=&quot;x&quot;===y?nt:st,Z=E[w],J=Z+g[Q],tt=Z-g[G],et=St(f?xt(J,K):J,Z,f?Lt(tt,X):tt);E[w]=et,C[w]=et-Z}}e.modifiersData[n]=C}},requiresIfExists:[&quot;offset&quot;]};function ae(t,e,i){void 0===i&amp;&amp;(i=!1);var n,s,o=ft(e),r=ft(e)&amp;&amp;function(t){var e=t.getBoundingClientRect(),i=e.width/t.offsetWidth||1,n=e.height/t.offsetHeight||1;return 1!==i||1!==n}(e),a=At(e),l=bt(t,r),c={scrollLeft:0,scrollTop:0},h={x:0,y:0};return(o||!o&amp;&amp;!i)&amp;&amp;((&quot;body&quot;!==ht(e)||Vt(a))&amp;&amp;(c=(n=e)!==dt(n)&amp;&amp;ft(n)?{scrollLeft:(s=n).scrollLeft,scrollTop:s.scrollTop}:Ut(n)),ft(e)?((h=bt(e,!0)).x+=e.clientLeft,h.y+=e.clientTop):a&amp;&amp;(h.x=$t(a))),{x:l.left+c.scrollLeft-h.x,y:l.top+c.scrollTop-h.y,width:l.width,height:l.height}}var le={placement:&quot;bottom&quot;,modifiers:[],strategy:&quot;absolute&quot;};function ce(){for(var t=arguments.length,e=new Array(t),i=0;i&lt;t;i++)e[i]=arguments[i];return!e.some((function(t){return!(t&amp;&amp;&quot;function&quot;==typeof t.getBoundingClientRect)}))}function he(t){void 0===t&amp;&amp;(t={});var e=t,i=e.defaultModifiers,n=void 0===i?[]:i,s=e.defaultOptions,o=void 0===s?le:s;return function(t,e,i){void 0===i&amp;&amp;(i=o);var s,r,a={placement:&quot;bottom&quot;,orderedModifiers:[],options:Object.assign({},le,o),modifiersData:{},elements:{reference:t,popper:e},attributes:{},styles:{}},l=[],c=!1,h={state:a,setOptions:function(i){d(),a.options=Object.assign({},o,a.options,i),a.scrollParents={reference:ut(t)?Kt(t):t.contextElement?Kt(t.contextElement):[],popper:Kt(e)};var s,r,c=function(t){var e=function(t){var e=new Map,i=new Set,n=[];return t.forEach((function(t){e.set(t.name,t)})),t.forEach((function(t){i.has(t.name)||function t(s){i.add(s.name),[].concat(s.requires||[],s.requiresIfExists||[]).forEach((function(n){if(!i.has(n)){var s=e.get(n);s&amp;&amp;t(s)}})),n.push(s)}(t)})),n}(t);return ct.reduce((function(t,i){return t.concat(e.filter((function(t){return t.phase===i})))}),[])}((s=[].concat(n,a.options.modifiers),r=s.reduce((function(t,e){var i=t[e.name];return t[e.name]=i?Object.assign({},i,e,{options:Object.assign({},i.options,e.options),data:Object.assign({},i.data,e.data)}):e,t}),{}),Object.keys(r).map((function(t){return r[t]}))));return a.orderedModifiers=c.filter((function(t){return t.enabled})),a.orderedModifiers.forEach((function(t){var e=t.name,i=t.options,n=void 0===i?{}:i,s=t.effect;if(&quot;function&quot;==typeof s){var o=s({state:a,name:e,instance:h,options:n});l.push(o||function(){})}})),h.update()},forceUpdate:function(){if(!c){var t=a.elements,e=t.reference,i=t.popper;if(ce(e,i)){a.rects={reference:ae(e,Ct(i),&quot;fixed&quot;===a.options.strategy),popper:vt(i)},a.reset=!1,a.placement=a.options.placement,a.orderedModifiers.forEach((function(t){return a.modifiersData[t.name]=Object.assign({},t.data)}));for(var n=0;n&lt;a.orderedModifiers.length;n++)if(!0!==a.reset){var s=a.orderedModifiers[n],o=s.fn,r=s.options,l=void 0===r?{}:r,d=s.name;&quot;function&quot;==typeof o&amp;&amp;(a=o({state:a,options:l,name:d,instance:h})||a)}else a.reset=!1,n=-1}}},update:(s=function(){return new Promise((function(t){h.forceUpdate(),t(a)}))},function(){return r||(r=new Promise((function(t){Promise.resolve().then((function(){r=void 0,t(s())}))}))),r}),destroy:function(){d(),c=!0}};if(!ce(t,e))return h;function d(){l.forEach((function(t){return t()})),l=[]}return h.setOptions(i).then((function(t){!c&amp;&amp;i.onFirstUpdate&amp;&amp;i.onFirstUpdate(t)})),h}}var de=he(),ue=he({defaultModifiers:[Rt,oe,Ht,mt]}),fe=he({defaultModifiers:[Rt,oe,Ht,mt,se,te,re,Pt,ne]}),pe=Object.freeze({__proto__:null,popperGenerator:he,detectOverflow:Zt,createPopperBase:de,createPopper:fe,createPopperLite:ue,top:it,bottom:nt,right:st,left:ot,auto:&quot;auto&quot;,basePlacements:rt,start:&quot;start&quot;,end:&quot;end&quot;,clippingParents:&quot;clippingParents&quot;,viewport:&quot;viewport&quot;,popper:&quot;popper&quot;,reference:&quot;reference&quot;,variationPlacements:at,placements:lt,beforeRead:&quot;beforeRead&quot;,read:&quot;read&quot;,afterRead:&quot;afterRead&quot;,beforeMain:&quot;beforeMain&quot;,main:&quot;main&quot;,afterMain:&quot;afterMain&quot;,beforeWrite:&quot;beforeWrite&quot;,write:&quot;write&quot;,afterWrite:&quot;afterWrite&quot;,modifierPhases:ct,applyStyles:mt,arrow:Pt,computeStyles:Ht,eventListeners:Rt,flip:te,hide:ne,offset:se,popperOffsets:oe,preventOverflow:re});const me=new RegExp(&quot;ArrowUp|ArrowDown|Escape&quot;),ge=p()?&quot;top-end&quot;:&quot;top-start&quot;,_e=p()?&quot;top-start&quot;:&quot;top-end&quot;,be=p()?&quot;bottom-end&quot;:&quot;bottom-start&quot;,ve=p()?&quot;bottom-start&quot;:&quot;bottom-end&quot;,ye=p()?&quot;left-start&quot;:&quot;right-start&quot;,we=p()?&quot;right-start&quot;:&quot;left-start&quot;,Ee={offset:[0,2],boundary:&quot;clippingParents&quot;,reference:&quot;toggle&quot;,display:&quot;dynamic&quot;,popperConfig:null,autoClose:!0},Ae={offset:&quot;(array|string|function)&quot;,boundary:&quot;(string|element)&quot;,reference:&quot;(string|element|object)&quot;,display:&quot;string&quot;,popperConfig:&quot;(null|object|function)&quot;,autoClose:&quot;(boolean|string)&quot;};class Te extends H{constructor(t,e){super(t),this._popper=null,this._config=this._getConfig(e),this._menu=this._getMenuElement(),this._inNavbar=this._detectNavbar()}static get Default(){return Ee}static get DefaultType(){return Ae}static get NAME(){return&quot;dropdown&quot;}toggle(){return this._isShown()?this.hide():this.show()}show(){if(l(this._element)||this._isShown(this._menu))return;const t={relatedTarget:this._element};if(P.trigger(this._element,&quot;show.bs.dropdown&quot;,t).defaultPrevented)return;const e=Te.getParentFromElement(this._element);this._inNavbar?F.setDataAttribute(this._menu,&quot;popper&quot;,&quot;none&quot;):this._createPopper(e),&quot;ontouchstart&quot;in document.documentElement&amp;&amp;!e.closest(&quot;.navbar-nav&quot;)&amp;&amp;[].concat(...document.body.children).forEach(t=&gt;P.on(t,&quot;mouseover&quot;,h)),this._element.focus(),this._element.setAttribute(&quot;aria-expanded&quot;,!0),this._menu.classList.add(&quot;show&quot;),this._element.classList.add(&quot;show&quot;),P.trigger(this._element,&quot;shown.bs.dropdown&quot;,t)}hide(){if(l(this._element)||!this._isShown(this._menu))return;const t={relatedTarget:this._element};this._completeHide(t)}dispose(){this._popper&amp;&amp;this._popper.destroy(),super.dispose()}update(){this._inNavbar=this._detectNavbar(),this._popper&amp;&amp;this._popper.update()}_completeHide(t){P.trigger(this._element,&quot;hide.bs.dropdown&quot;,t).defaultPrevented||(&quot;ontouchstart&quot;in document.documentElement&amp;&amp;[].concat(...document.body.children).forEach(t=&gt;P.off(t,&quot;mouseover&quot;,h)),this._popper&amp;&amp;this._popper.destroy(),this._menu.classList.remove(&quot;show&quot;),this._element.classList.remove(&quot;show&quot;),this._element.setAttribute(&quot;aria-expanded&quot;,&quot;false&quot;),F.removeDataAttribute(this._menu,&quot;popper&quot;),P.trigger(this._element,&quot;hidden.bs.dropdown&quot;,t))}_getConfig(t){if(t={...this.constructor.Default,...F.getDataAttributes(this._element),...t},r(&quot;dropdown&quot;,t,this.constructor.DefaultType),&quot;object&quot;==typeof t.reference&amp;&amp;!s(t.reference)&amp;&amp;&quot;function&quot;!=typeof t.reference.getBoundingClientRect)throw new TypeError(&quot;dropdown&quot;.toUpperCase()+&#39;: Option &quot;reference&quot; provided type &quot;object&quot; without a required &quot;getBoundingClientRect&quot; method.&#39;);return t}_createPopper(t){if(void 0===pe)throw new TypeError(&quot;Bootstrap&#39;s dropdowns require Popper (https://popper.js.org)&quot;);let e=this._element;&quot;parent&quot;===this._config.reference?e=t:s(this._config.reference)?e=o(this._config.reference):&quot;object&quot;==typeof this._config.reference&amp;&amp;(e=this._config.reference);const i=this._getPopperConfig(),n=i.modifiers.find(t=&gt;&quot;applyStyles&quot;===t.name&amp;&amp;!1===t.enabled);this._popper=fe(e,this._menu,i),n&amp;&amp;F.setDataAttribute(this._menu,&quot;popper&quot;,&quot;static&quot;)}_isShown(t=this._element){return t.classList.contains(&quot;show&quot;)}_getMenuElement(){return U.next(this._element,&quot;.dropdown-menu&quot;)[0]}_getPlacement(){const t=this._element.parentNode;if(t.classList.contains(&quot;dropend&quot;))return ye;if(t.classList.contains(&quot;dropstart&quot;))return we;const e=&quot;end&quot;===getComputedStyle(this._menu).getPropertyValue(&quot;--bs-position&quot;).trim();return t.classList.contains(&quot;dropup&quot;)?e?_e:ge:e?ve:be}_detectNavbar(){return null!==this._element.closest(&quot;.navbar&quot;)}_getOffset(){const{offset:t}=this._config;return&quot;string&quot;==typeof t?t.split(&quot;,&quot;).map(t=&gt;Number.parseInt(t,10)):&quot;function&quot;==typeof t?e=&gt;t(e,this._element):t}_getPopperConfig(){const t={placement:this._getPlacement(),modifiers:[{name:&quot;preventOverflow&quot;,options:{boundary:this._config.boundary}},{name:&quot;offset&quot;,options:{offset:this._getOffset()}}]};return&quot;static&quot;===this._config.display&amp;&amp;(t.modifiers=[{name:&quot;applyStyles&quot;,enabled:!1}]),{...t,...&quot;function&quot;==typeof this._config.popperConfig?this._config.popperConfig(t):this._config.popperConfig}}_selectMenuItem({key:t,target:e}){const i=U.find(&quot;.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)&quot;,this._menu).filter(a);i.length&amp;&amp;b(i,e,&quot;ArrowDown&quot;===t,!i.includes(e)).focus()}static jQueryInterface(t){return this.each((function(){const e=Te.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===e[t])throw new TypeError(`No method named &quot;${t}&quot;`);e[t]()}}))}static clearMenus(t){if(t&amp;&amp;(2===t.button||&quot;keyup&quot;===t.type&amp;&amp;&quot;Tab&quot;!==t.key))return;const e=U.find(&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;);for(let i=0,n=e.length;i&lt;n;i++){const n=Te.getInstance(e[i]);if(!n||!1===n._config.autoClose)continue;if(!n._isShown())continue;const s={relatedTarget:n._element};if(t){const e=t.composedPath(),i=e.includes(n._menu);if(e.includes(n._element)||&quot;inside&quot;===n._config.autoClose&amp;&amp;!i||&quot;outside&quot;===n._config.autoClose&amp;&amp;i)continue;if(n._menu.contains(t.target)&amp;&amp;(&quot;keyup&quot;===t.type&amp;&amp;&quot;Tab&quot;===t.key||/input|select|option|textarea|form/i.test(t.target.tagName)))continue;&quot;click&quot;===t.type&amp;&amp;(s.clickEvent=t)}n._completeHide(s)}}static getParentFromElement(t){return i(t)||t.parentNode}static dataApiKeydownHandler(t){if(/input|textarea/i.test(t.target.tagName)?&quot;Space&quot;===t.key||&quot;Escape&quot;!==t.key&amp;&amp;(&quot;ArrowDown&quot;!==t.key&amp;&amp;&quot;ArrowUp&quot;!==t.key||t.target.closest(&quot;.dropdown-menu&quot;)):!me.test(t.key))return;const e=this.classList.contains(&quot;show&quot;);if(!e&amp;&amp;&quot;Escape&quot;===t.key)return;if(t.preventDefault(),t.stopPropagation(),l(this))return;const i=this.matches(&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;)?this:U.prev(this,&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;)[0],n=Te.getOrCreateInstance(i);if(&quot;Escape&quot;!==t.key)return&quot;ArrowUp&quot;===t.key||&quot;ArrowDown&quot;===t.key?(e||n.show(),void n._selectMenuItem(t)):void(e&amp;&amp;&quot;Space&quot;!==t.key||Te.clearMenus());n.hide()}}P.on(document,&quot;keydown.bs.dropdown.data-api&quot;,&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;,Te.dataApiKeydownHandler),P.on(document,&quot;keydown.bs.dropdown.data-api&quot;,&quot;.dropdown-menu&quot;,Te.dataApiKeydownHandler),P.on(document,&quot;click.bs.dropdown.data-api&quot;,Te.clearMenus),P.on(document,&quot;keyup.bs.dropdown.data-api&quot;,Te.clearMenus),P.on(document,&quot;click.bs.dropdown.data-api&quot;,&#39;[data-bs-toggle=&quot;dropdown&quot;]&#39;,(function(t){t.preventDefault(),Te.getOrCreateInstance(this).toggle()})),m(Te);class Oe{constructor(){this._element=document.body}getWidth(){const t=document.documentElement.clientWidth;return Math.abs(window.innerWidth-t)}hide(){const t=this.getWidth();this._disableOverFlow(),this._setElementAttributes(this._element,&quot;paddingRight&quot;,e=&gt;e+t),this._setElementAttributes(&quot;.fixed-top, .fixed-bottom, .is-fixed, .sticky-top&quot;,&quot;paddingRight&quot;,e=&gt;e+t),this._setElementAttributes(&quot;.sticky-top&quot;,&quot;marginRight&quot;,e=&gt;e-t)}_disableOverFlow(){this._saveInitialAttribute(this._element,&quot;overflow&quot;),this._element.style.overflow=&quot;hidden&quot;}_setElementAttributes(t,e,i){const n=this.getWidth();this._applyManipulationCallback(t,t=&gt;{if(t!==this._element&amp;&amp;window.innerWidth&gt;t.clientWidth+n)return;this._saveInitialAttribute(t,e);const s=window.getComputedStyle(t)[e];t.style[e]=i(Number.parseFloat(s))+&quot;px&quot;})}reset(){this._resetElementAttributes(this._element,&quot;overflow&quot;),this._resetElementAttributes(this._element,&quot;paddingRight&quot;),this._resetElementAttributes(&quot;.fixed-top, .fixed-bottom, .is-fixed, .sticky-top&quot;,&quot;paddingRight&quot;),this._resetElementAttributes(&quot;.sticky-top&quot;,&quot;marginRight&quot;)}_saveInitialAttribute(t,e){const i=t.style[e];i&amp;&amp;F.setDataAttribute(t,e,i)}_resetElementAttributes(t,e){this._applyManipulationCallback(t,t=&gt;{const i=F.getDataAttribute(t,e);void 0===i?t.style.removeProperty(e):(F.removeDataAttribute(t,e),t.style[e]=i)})}_applyManipulationCallback(t,e){s(t)?e(t):U.find(t,this._element).forEach(e)}isOverflowing(){return this.getWidth()&gt;0}}const Ce={className:&quot;modal-backdrop&quot;,isVisible:!0,isAnimated:!1,rootElement:&quot;body&quot;,clickCallback:null},ke={className:&quot;string&quot;,isVisible:&quot;boolean&quot;,isAnimated:&quot;boolean&quot;,rootElement:&quot;(element|string)&quot;,clickCallback:&quot;(function|null)&quot;};class Le{constructor(t){this._config=this._getConfig(t),this._isAppended=!1,this._element=null}show(t){this._config.isVisible?(this._append(),this._config.isAnimated&amp;&amp;d(this._getElement()),this._getElement().classList.add(&quot;show&quot;),this._emulateAnimation(()=&gt;{g(t)})):g(t)}hide(t){this._config.isVisible?(this._getElement().classList.remove(&quot;show&quot;),this._emulateAnimation(()=&gt;{this.dispose(),g(t)})):g(t)}_getElement(){if(!this._element){const t=document.createElement(&quot;div&quot;);t.className=this._config.className,this._config.isAnimated&amp;&amp;t.classList.add(&quot;fade&quot;),this._element=t}return this._element}_getConfig(t){return(t={...Ce,...&quot;object&quot;==typeof t?t:{}}).rootElement=o(t.rootElement),r(&quot;backdrop&quot;,t,ke),t}_append(){this._isAppended||(this._config.rootElement.append(this._getElement()),P.on(this._getElement(),&quot;mousedown.bs.backdrop&quot;,()=&gt;{g(this._config.clickCallback)}),this._isAppended=!0)}dispose(){this._isAppended&amp;&amp;(P.off(this._element,&quot;mousedown.bs.backdrop&quot;),this._element.remove(),this._isAppended=!1)}_emulateAnimation(t){_(t,this._getElement(),this._config.isAnimated)}}const xe={trapElement:null,autofocus:!0},De={trapElement:&quot;element&quot;,autofocus:&quot;boolean&quot;};class Se{constructor(t){this._config=this._getConfig(t),this._isActive=!1,this._lastTabNavDirection=null}activate(){const{trapElement:t,autofocus:e}=this._config;this._isActive||(e&amp;&amp;t.focus(),P.off(document,&quot;.bs.focustrap&quot;),P.on(document,&quot;focusin.bs.focustrap&quot;,t=&gt;this._handleFocusin(t)),P.on(document,&quot;keydown.tab.bs.focustrap&quot;,t=&gt;this._handleKeydown(t)),this._isActive=!0)}deactivate(){this._isActive&amp;&amp;(this._isActive=!1,P.off(document,&quot;.bs.focustrap&quot;))}_handleFocusin(t){const{target:e}=t,{trapElement:i}=this._config;if(e===document||e===i||i.contains(e))return;const n=U.focusableChildren(i);0===n.length?i.focus():&quot;backward&quot;===this._lastTabNavDirection?n[n.length-1].focus():n[0].focus()}_handleKeydown(t){&quot;Tab&quot;===t.key&amp;&amp;(this._lastTabNavDirection=t.shiftKey?&quot;backward&quot;:&quot;forward&quot;)}_getConfig(t){return t={...xe,...&quot;object&quot;==typeof t?t:{}},r(&quot;focustrap&quot;,t,De),t}}const Ne={backdrop:!0,keyboard:!0,focus:!0},Ie={backdrop:&quot;(boolean|string)&quot;,keyboard:&quot;boolean&quot;,focus:&quot;boolean&quot;};class Pe extends H{constructor(t,e){super(t),this._config=this._getConfig(e),this._dialog=U.findOne(&quot;.modal-dialog&quot;,this._element),this._backdrop=this._initializeBackDrop(),this._focustrap=this._initializeFocusTrap(),this._isShown=!1,this._ignoreBackdropClick=!1,this._isTransitioning=!1,this._scrollBar=new Oe}static get Default(){return Ne}static get NAME(){return&quot;modal&quot;}toggle(t){return this._isShown?this.hide():this.show(t)}show(t){this._isShown||this._isTransitioning||P.trigger(this._element,&quot;show.bs.modal&quot;,{relatedTarget:t}).defaultPrevented||(this._isShown=!0,this._isAnimated()&amp;&amp;(this._isTransitioning=!0),this._scrollBar.hide(),document.body.classList.add(&quot;modal-open&quot;),this._adjustDialog(),this._setEscapeEvent(),this._setResizeEvent(),P.on(this._dialog,&quot;mousedown.dismiss.bs.modal&quot;,()=&gt;{P.one(this._element,&quot;mouseup.dismiss.bs.modal&quot;,t=&gt;{t.target===this._element&amp;&amp;(this._ignoreBackdropClick=!0)})}),this._showBackdrop(()=&gt;this._showElement(t)))}hide(){if(!this._isShown||this._isTransitioning)return;if(P.trigger(this._element,&quot;hide.bs.modal&quot;).defaultPrevented)return;this._isShown=!1;const t=this._isAnimated();t&amp;&amp;(this._isTransitioning=!0),this._setEscapeEvent(),this._setResizeEvent(),this._focustrap.deactivate(),this._element.classList.remove(&quot;show&quot;),P.off(this._element,&quot;click.dismiss.bs.modal&quot;),P.off(this._dialog,&quot;mousedown.dismiss.bs.modal&quot;),this._queueCallback(()=&gt;this._hideModal(),this._element,t)}dispose(){[window,this._dialog].forEach(t=&gt;P.off(t,&quot;.bs.modal&quot;)),this._backdrop.dispose(),this._focustrap.deactivate(),super.dispose()}handleUpdate(){this._adjustDialog()}_initializeBackDrop(){return new Le({isVisible:Boolean(this._config.backdrop),isAnimated:this._isAnimated()})}_initializeFocusTrap(){return new Se({trapElement:this._element})}_getConfig(t){return t={...Ne,...F.getDataAttributes(this._element),...&quot;object&quot;==typeof t?t:{}},r(&quot;modal&quot;,t,Ie),t}_showElement(t){const e=this._isAnimated(),i=U.findOne(&quot;.modal-body&quot;,this._dialog);this._element.parentNode&amp;&amp;this._element.parentNode.nodeType===Node.ELEMENT_NODE||document.body.append(this._element),this._element.style.display=&quot;block&quot;,this._element.removeAttribute(&quot;aria-hidden&quot;),this._element.setAttribute(&quot;aria-modal&quot;,!0),this._element.setAttribute(&quot;role&quot;,&quot;dialog&quot;),this._element.scrollTop=0,i&amp;&amp;(i.scrollTop=0),e&amp;&amp;d(this._element),this._element.classList.add(&quot;show&quot;),this._queueCallback(()=&gt;{this._config.focus&amp;&amp;this._focustrap.activate(),this._isTransitioning=!1,P.trigger(this._element,&quot;shown.bs.modal&quot;,{relatedTarget:t})},this._dialog,e)}_setEscapeEvent(){this._isShown?P.on(this._element,&quot;keydown.dismiss.bs.modal&quot;,t=&gt;{this._config.keyboard&amp;&amp;&quot;Escape&quot;===t.key?(t.preventDefault(),this.hide()):this._config.keyboard||&quot;Escape&quot;!==t.key||this._triggerBackdropTransition()}):P.off(this._element,&quot;keydown.dismiss.bs.modal&quot;)}_setResizeEvent(){this._isShown?P.on(window,&quot;resize.bs.modal&quot;,()=&gt;this._adjustDialog()):P.off(window,&quot;resize.bs.modal&quot;)}_hideModal(){this._element.style.display=&quot;none&quot;,this._element.setAttribute(&quot;aria-hidden&quot;,!0),this._element.removeAttribute(&quot;aria-modal&quot;),this._element.removeAttribute(&quot;role&quot;),this._isTransitioning=!1,this._backdrop.hide(()=&gt;{document.body.classList.remove(&quot;modal-open&quot;),this._resetAdjustments(),this._scrollBar.reset(),P.trigger(this._element,&quot;hidden.bs.modal&quot;)})}_showBackdrop(t){P.on(this._element,&quot;click.dismiss.bs.modal&quot;,t=&gt;{this._ignoreBackdropClick?this._ignoreBackdropClick=!1:t.target===t.currentTarget&amp;&amp;(!0===this._config.backdrop?this.hide():&quot;static&quot;===this._config.backdrop&amp;&amp;this._triggerBackdropTransition())}),this._backdrop.show(t)}_isAnimated(){return this._element.classList.contains(&quot;fade&quot;)}_triggerBackdropTransition(){if(P.trigger(this._element,&quot;hidePrevented.bs.modal&quot;).defaultPrevented)return;const{classList:t,scrollHeight:e,style:i}=this._element,n=e&gt;document.documentElement.clientHeight;!n&amp;&amp;&quot;hidden&quot;===i.overflowY||t.contains(&quot;modal-static&quot;)||(n||(i.overflowY=&quot;hidden&quot;),t.add(&quot;modal-static&quot;),this._queueCallback(()=&gt;{t.remove(&quot;modal-static&quot;),n||this._queueCallback(()=&gt;{i.overflowY=&quot;&quot;},this._dialog)},this._dialog),this._element.focus())}_adjustDialog(){const t=this._element.scrollHeight&gt;document.documentElement.clientHeight,e=this._scrollBar.getWidth(),i=e&gt;0;(!i&amp;&amp;t&amp;&amp;!p()||i&amp;&amp;!t&amp;&amp;p())&amp;&amp;(this._element.style.paddingLeft=e+&quot;px&quot;),(i&amp;&amp;!t&amp;&amp;!p()||!i&amp;&amp;t&amp;&amp;p())&amp;&amp;(this._element.style.paddingRight=e+&quot;px&quot;)}_resetAdjustments(){this._element.style.paddingLeft=&quot;&quot;,this._element.style.paddingRight=&quot;&quot;}static jQueryInterface(t,e){return this.each((function(){const i=Pe.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===i[t])throw new TypeError(`No method named &quot;${t}&quot;`);i[t](e)}}))}}P.on(document,&quot;click.bs.modal.data-api&quot;,&#39;[data-bs-toggle=&quot;modal&quot;]&#39;,(function(t){const e=i(this);[&quot;A&quot;,&quot;AREA&quot;].includes(this.tagName)&amp;&amp;t.preventDefault(),P.one(e,&quot;show.bs.modal&quot;,t=&gt;{t.defaultPrevented||P.one(e,&quot;hidden.bs.modal&quot;,()=&gt;{a(this)&amp;&amp;this.focus()})}),Pe.getOrCreateInstance(e).toggle(this)})),B(Pe),m(Pe);const je={backdrop:!0,keyboard:!0,scroll:!1},Me={backdrop:&quot;boolean&quot;,keyboard:&quot;boolean&quot;,scroll:&quot;boolean&quot;};class He extends H{constructor(t,e){super(t),this._config=this._getConfig(e),this._isShown=!1,this._backdrop=this._initializeBackDrop(),this._focustrap=this._initializeFocusTrap(),this._addEventListeners()}static get NAME(){return&quot;offcanvas&quot;}static get Default(){return je}toggle(t){return this._isShown?this.hide():this.show(t)}show(t){this._isShown||P.trigger(this._element,&quot;show.bs.offcanvas&quot;,{relatedTarget:t}).defaultPrevented||(this._isShown=!0,this._element.style.visibility=&quot;visible&quot;,this._backdrop.show(),this._config.scroll||(new Oe).hide(),this._element.removeAttribute(&quot;aria-hidden&quot;),this._element.setAttribute(&quot;aria-modal&quot;,!0),this._element.setAttribute(&quot;role&quot;,&quot;dialog&quot;),this._element.classList.add(&quot;show&quot;),this._queueCallback(()=&gt;{this._config.scroll||this._focustrap.activate(),P.trigger(this._element,&quot;shown.bs.offcanvas&quot;,{relatedTarget:t})},this._element,!0))}hide(){this._isShown&amp;&amp;(P.trigger(this._element,&quot;hide.bs.offcanvas&quot;).defaultPrevented||(this._focustrap.deactivate(),this._element.blur(),this._isShown=!1,this._element.classList.remove(&quot;show&quot;),this._backdrop.hide(),this._queueCallback(()=&gt;{this._element.setAttribute(&quot;aria-hidden&quot;,!0),this._element.removeAttribute(&quot;aria-modal&quot;),this._element.removeAttribute(&quot;role&quot;),this._element.style.visibility=&quot;hidden&quot;,this._config.scroll||(new Oe).reset(),P.trigger(this._element,&quot;hidden.bs.offcanvas&quot;)},this._element,!0)))}dispose(){this._backdrop.dispose(),this._focustrap.deactivate(),super.dispose()}_getConfig(t){return t={...je,...F.getDataAttributes(this._element),...&quot;object&quot;==typeof t?t:{}},r(&quot;offcanvas&quot;,t,Me),t}_initializeBackDrop(){return new Le({className:&quot;offcanvas-backdrop&quot;,isVisible:this._config.backdrop,isAnimated:!0,rootElement:this._element.parentNode,clickCallback:()=&gt;this.hide()})}_initializeFocusTrap(){return new Se({trapElement:this._element})}_addEventListeners(){P.on(this._element,&quot;keydown.dismiss.bs.offcanvas&quot;,t=&gt;{this._config.keyboard&amp;&amp;&quot;Escape&quot;===t.key&amp;&amp;this.hide()})}static jQueryInterface(t){return this.each((function(){const e=He.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===e[t]||t.startsWith(&quot;_&quot;)||&quot;constructor&quot;===t)throw new TypeError(`No method named &quot;${t}&quot;`);e[t](this)}}))}}P.on(document,&quot;click.bs.offcanvas.data-api&quot;,&#39;[data-bs-toggle=&quot;offcanvas&quot;]&#39;,(function(t){const e=i(this);if([&quot;A&quot;,&quot;AREA&quot;].includes(this.tagName)&amp;&amp;t.preventDefault(),l(this))return;P.one(e,&quot;hidden.bs.offcanvas&quot;,()=&gt;{a(this)&amp;&amp;this.focus()});const n=U.findOne(&quot;.offcanvas.show&quot;);n&amp;&amp;n!==e&amp;&amp;He.getInstance(n).hide(),He.getOrCreateInstance(e).toggle(this)})),P.on(window,&quot;load.bs.offcanvas.data-api&quot;,()=&gt;U.find(&quot;.offcanvas.show&quot;).forEach(t=&gt;He.getOrCreateInstance(t).show())),B(He),m(He);const Be=new Set([&quot;background&quot;,&quot;cite&quot;,&quot;href&quot;,&quot;itemtype&quot;,&quot;longdesc&quot;,&quot;poster&quot;,&quot;src&quot;,&quot;xlink:href&quot;]),Re=/^(?:(?:https?|mailto|ftp|tel|file):|[^#&amp;/:?]*(?:[#/?]|$))/i,We=/^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[\d+/a-z]+=*$/i,ze=(t,e)=&gt;{const i=t.nodeName.toLowerCase();if(e.includes(i))return!Be.has(i)||Boolean(Re.test(t.nodeValue)||We.test(t.nodeValue));const n=e.filter(t=&gt;t instanceof RegExp);for(let t=0,e=n.length;t&lt;e;t++)if(n[t].test(i))return!0;return!1};function qe(t,e,i){if(!t.length)return t;if(i&amp;&amp;&quot;function&quot;==typeof i)return i(t);const n=(new window.DOMParser).parseFromString(t,&quot;text/html&quot;),s=Object.keys(e),o=[].concat(...n.body.querySelectorAll(&quot;*&quot;));for(let t=0,i=o.length;t&lt;i;t++){const i=o[t],n=i.nodeName.toLowerCase();if(!s.includes(n)){i.remove();continue}const r=[].concat(...i.attributes),a=[].concat(e[&quot;*&quot;]||[],e[n]||[]);r.forEach(t=&gt;{ze(t,a)||i.removeAttribute(t.nodeName)})}return n.body.innerHTML}const Fe=new Set([&quot;sanitize&quot;,&quot;allowList&quot;,&quot;sanitizeFn&quot;]),Ue={animation:&quot;boolean&quot;,template:&quot;string&quot;,title:&quot;(string|element|function)&quot;,trigger:&quot;string&quot;,delay:&quot;(number|object)&quot;,html:&quot;boolean&quot;,selector:&quot;(string|boolean)&quot;,placement:&quot;(string|function)&quot;,offset:&quot;(array|string|function)&quot;,container:&quot;(string|element|boolean)&quot;,fallbackPlacements:&quot;array&quot;,boundary:&quot;(string|element)&quot;,customClass:&quot;(string|function)&quot;,sanitize:&quot;boolean&quot;,sanitizeFn:&quot;(null|function)&quot;,allowList:&quot;object&quot;,popperConfig:&quot;(null|object|function)&quot;},$e={AUTO:&quot;auto&quot;,TOP:&quot;top&quot;,RIGHT:p()?&quot;left&quot;:&quot;right&quot;,BOTTOM:&quot;bottom&quot;,LEFT:p()?&quot;right&quot;:&quot;left&quot;},Ve={animation:!0,template:&#39;&lt;div class=&quot;tooltip&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;tooltip-arrow&quot;&gt;&lt;/div&gt;&lt;div class=&quot;tooltip-inner&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;,trigger:&quot;hover focus&quot;,title:&quot;&quot;,delay:0,html:!1,selector:!1,placement:&quot;top&quot;,offset:[0,0],container:!1,fallbackPlacements:[&quot;top&quot;,&quot;right&quot;,&quot;bottom&quot;,&quot;left&quot;],boundary:&quot;clippingParents&quot;,customClass:&quot;&quot;,sanitize:!0,sanitizeFn:null,allowList:{&quot;*&quot;:[&quot;class&quot;,&quot;dir&quot;,&quot;id&quot;,&quot;lang&quot;,&quot;role&quot;,/^aria-[\w-]*$/i],a:[&quot;target&quot;,&quot;href&quot;,&quot;title&quot;,&quot;rel&quot;],area:[],b:[],br:[],col:[],code:[],div:[],em:[],hr:[],h1:[],h2:[],h3:[],h4:[],h5:[],h6:[],i:[],img:[&quot;src&quot;,&quot;srcset&quot;,&quot;alt&quot;,&quot;title&quot;,&quot;width&quot;,&quot;height&quot;],li:[],ol:[],p:[],pre:[],s:[],small:[],span:[],sub:[],sup:[],strong:[],u:[],ul:[]},popperConfig:null},Ke={HIDE:&quot;hide.bs.tooltip&quot;,HIDDEN:&quot;hidden.bs.tooltip&quot;,SHOW:&quot;show.bs.tooltip&quot;,SHOWN:&quot;shown.bs.tooltip&quot;,INSERTED:&quot;inserted.bs.tooltip&quot;,CLICK:&quot;click.bs.tooltip&quot;,FOCUSIN:&quot;focusin.bs.tooltip&quot;,FOCUSOUT:&quot;focusout.bs.tooltip&quot;,MOUSEENTER:&quot;mouseenter.bs.tooltip&quot;,MOUSELEAVE:&quot;mouseleave.bs.tooltip&quot;};class Xe extends H{constructor(t,e){if(void 0===pe)throw new TypeError(&quot;Bootstrap&#39;s tooltips require Popper (https://popper.js.org)&quot;);super(t),this._isEnabled=!0,this._timeout=0,this._hoverState=&quot;&quot;,this._activeTrigger={},this._popper=null,this._config=this._getConfig(e),this.tip=null,this._setListeners()}static get Default(){return Ve}static get NAME(){return&quot;tooltip&quot;}static get Event(){return Ke}static get DefaultType(){return Ue}enable(){this._isEnabled=!0}disable(){this._isEnabled=!1}toggleEnabled(){this._isEnabled=!this._isEnabled}toggle(t){if(this._isEnabled)if(t){const e=this._initializeOnDelegatedTarget(t);e._activeTrigger.click=!e._activeTrigger.click,e._isWithActiveTrigger()?e._enter(null,e):e._leave(null,e)}else{if(this.getTipElement().classList.contains(&quot;show&quot;))return void this._leave(null,this);this._enter(null,this)}}dispose(){clearTimeout(this._timeout),P.off(this._element.closest(&quot;.modal&quot;),&quot;hide.bs.modal&quot;,this._hideModalHandler),this.tip&amp;&amp;this.tip.remove(),this._popper&amp;&amp;this._popper.destroy(),super.dispose()}show(){if(&quot;none&quot;===this._element.style.display)throw new Error(&quot;Please use show on visible elements&quot;);if(!this.isWithContent()||!this._isEnabled)return;const t=P.trigger(this._element,this.constructor.Event.SHOW),e=c(this._element),i=null===e?this._element.ownerDocument.documentElement.contains(this._element):e.contains(this._element);if(t.defaultPrevented||!i)return;const n=this.getTipElement(),s=(t=&gt;{do{t+=Math.floor(1e6*Math.random())}while(document.getElementById(t));return t})(this.constructor.NAME);n.setAttribute(&quot;id&quot;,s),this._element.setAttribute(&quot;aria-describedby&quot;,s),this._config.animation&amp;&amp;n.classList.add(&quot;fade&quot;);const o=&quot;function&quot;==typeof this._config.placement?this._config.placement.call(this,n,this._element):this._config.placement,r=this._getAttachment(o);this._addAttachmentClass(r);const{container:a}=this._config;M.set(n,this.constructor.DATA_KEY,this),this._element.ownerDocument.documentElement.contains(this.tip)||(a.append(n),P.trigger(this._element,this.constructor.Event.INSERTED)),this._popper?this._popper.update():this._popper=fe(this._element,n,this._getPopperConfig(r)),n.classList.add(&quot;show&quot;);const l=this._resolvePossibleFunction(this._config.customClass);l&amp;&amp;n.classList.add(...l.split(&quot; &quot;)),&quot;ontouchstart&quot;in document.documentElement&amp;&amp;[].concat(...document.body.children).forEach(t=&gt;{P.on(t,&quot;mouseover&quot;,h)});const d=this.tip.classList.contains(&quot;fade&quot;);this._queueCallback(()=&gt;{const t=this._hoverState;this._hoverState=null,P.trigger(this._element,this.constructor.Event.SHOWN),&quot;out&quot;===t&amp;&amp;this._leave(null,this)},this.tip,d)}hide(){if(!this._popper)return;const t=this.getTipElement();if(P.trigger(this._element,this.constructor.Event.HIDE).defaultPrevented)return;t.classList.remove(&quot;show&quot;),&quot;ontouchstart&quot;in document.documentElement&amp;&amp;[].concat(...document.body.children).forEach(t=&gt;P.off(t,&quot;mouseover&quot;,h)),this._activeTrigger.click=!1,this._activeTrigger.focus=!1,this._activeTrigger.hover=!1;const e=this.tip.classList.contains(&quot;fade&quot;);this._queueCallback(()=&gt;{this._isWithActiveTrigger()||(&quot;show&quot;!==this._hoverState&amp;&amp;t.remove(),this._cleanTipClass(),this._element.removeAttribute(&quot;aria-describedby&quot;),P.trigger(this._element,this.constructor.Event.HIDDEN),this._popper&amp;&amp;(this._popper.destroy(),this._popper=null))},this.tip,e),this._hoverState=&quot;&quot;}update(){null!==this._popper&amp;&amp;this._popper.update()}isWithContent(){return Boolean(this.getTitle())}getTipElement(){if(this.tip)return this.tip;const t=document.createElement(&quot;div&quot;);t.innerHTML=this._config.template;const e=t.children[0];return this.setContent(e),e.classList.remove(&quot;fade&quot;,&quot;show&quot;),this.tip=e,this.tip}setContent(t){this._sanitizeAndSetContent(t,this.getTitle(),&quot;.tooltip-inner&quot;)}_sanitizeAndSetContent(t,e,i){const n=U.findOne(i,t);e||!n?this.setElementContent(n,e):n.remove()}setElementContent(t,e){if(null!==t)return s(e)?(e=o(e),void(this._config.html?e.parentNode!==t&amp;&amp;(t.innerHTML=&quot;&quot;,t.append(e)):t.textContent=e.textContent)):void(this._config.html?(this._config.sanitize&amp;&amp;(e=qe(e,this._config.allowList,this._config.sanitizeFn)),t.innerHTML=e):t.textContent=e)}getTitle(){const t=this._element.getAttribute(&quot;data-bs-original-title&quot;)||this._config.title;return this._resolvePossibleFunction(t)}updateAttachment(t){return&quot;right&quot;===t?&quot;end&quot;:&quot;left&quot;===t?&quot;start&quot;:t}_initializeOnDelegatedTarget(t,e){return e||this.constructor.getOrCreateInstance(t.delegateTarget,this._getDelegateConfig())}_getOffset(){const{offset:t}=this._config;return&quot;string&quot;==typeof t?t.split(&quot;,&quot;).map(t=&gt;Number.parseInt(t,10)):&quot;function&quot;==typeof t?e=&gt;t(e,this._element):t}_resolvePossibleFunction(t){return&quot;function&quot;==typeof t?t.call(this._element):t}_getPopperConfig(t){const e={placement:t,modifiers:[{name:&quot;flip&quot;,options:{fallbackPlacements:this._config.fallbackPlacements}},{name:&quot;offset&quot;,options:{offset:this._getOffset()}},{name:&quot;preventOverflow&quot;,options:{boundary:this._config.boundary}},{name:&quot;arrow&quot;,options:{element:`.${this.constructor.NAME}-arrow`}},{name:&quot;onChange&quot;,enabled:!0,phase:&quot;afterWrite&quot;,fn:t=&gt;this._handlePopperPlacementChange(t)}],onFirstUpdate:t=&gt;{t.options.placement!==t.placement&amp;&amp;this._handlePopperPlacementChange(t)}};return{...e,...&quot;function&quot;==typeof this._config.popperConfig?this._config.popperConfig(e):this._config.popperConfig}}_addAttachmentClass(t){this.getTipElement().classList.add(`${this._getBasicClassPrefix()}-${this.updateAttachment(t)}`)}_getAttachment(t){return $e[t.toUpperCase()]}_setListeners(){this._config.trigger.split(&quot; &quot;).forEach(t=&gt;{if(&quot;click&quot;===t)P.on(this._element,this.constructor.Event.CLICK,this._config.selector,t=&gt;this.toggle(t));else if(&quot;manual&quot;!==t){const e=&quot;hover&quot;===t?this.constructor.Event.MOUSEENTER:this.constructor.Event.FOCUSIN,i=&quot;hover&quot;===t?this.constructor.Event.MOUSELEAVE:this.constructor.Event.FOCUSOUT;P.on(this._element,e,this._config.selector,t=&gt;this._enter(t)),P.on(this._element,i,this._config.selector,t=&gt;this._leave(t))}}),this._hideModalHandler=()=&gt;{this._element&amp;&amp;this.hide()},P.on(this._element.closest(&quot;.modal&quot;),&quot;hide.bs.modal&quot;,this._hideModalHandler),this._config.selector?this._config={...this._config,trigger:&quot;manual&quot;,selector:&quot;&quot;}:this._fixTitle()}_fixTitle(){const t=this._element.getAttribute(&quot;title&quot;),e=typeof this._element.getAttribute(&quot;data-bs-original-title&quot;);(t||&quot;string&quot;!==e)&amp;&amp;(this._element.setAttribute(&quot;data-bs-original-title&quot;,t||&quot;&quot;),!t||this._element.getAttribute(&quot;aria-label&quot;)||this._element.textContent||this._element.setAttribute(&quot;aria-label&quot;,t),this._element.setAttribute(&quot;title&quot;,&quot;&quot;))}_enter(t,e){e=this._initializeOnDelegatedTarget(t,e),t&amp;&amp;(e._activeTrigger[&quot;focusin&quot;===t.type?&quot;focus&quot;:&quot;hover&quot;]=!0),e.getTipElement().classList.contains(&quot;show&quot;)||&quot;show&quot;===e._hoverState?e._hoverState=&quot;show&quot;:(clearTimeout(e._timeout),e._hoverState=&quot;show&quot;,e._config.delay&amp;&amp;e._config.delay.show?e._timeout=setTimeout(()=&gt;{&quot;show&quot;===e._hoverState&amp;&amp;e.show()},e._config.delay.show):e.show())}_leave(t,e){e=this._initializeOnDelegatedTarget(t,e),t&amp;&amp;(e._activeTrigger[&quot;focusout&quot;===t.type?&quot;focus&quot;:&quot;hover&quot;]=e._element.contains(t.relatedTarget)),e._isWithActiveTrigger()||(clearTimeout(e._timeout),e._hoverState=&quot;out&quot;,e._config.delay&amp;&amp;e._config.delay.hide?e._timeout=setTimeout(()=&gt;{&quot;out&quot;===e._hoverState&amp;&amp;e.hide()},e._config.delay.hide):e.hide())}_isWithActiveTrigger(){for(const t in this._activeTrigger)if(this._activeTrigger[t])return!0;return!1}_getConfig(t){const e=F.getDataAttributes(this._element);return Object.keys(e).forEach(t=&gt;{Fe.has(t)&amp;&amp;delete e[t]}),(t={...this.constructor.Default,...e,...&quot;object&quot;==typeof t&amp;&amp;t?t:{}}).container=!1===t.container?document.body:o(t.container),&quot;number&quot;==typeof t.delay&amp;&amp;(t.delay={show:t.delay,hide:t.delay}),&quot;number&quot;==typeof t.title&amp;&amp;(t.title=t.title.toString()),&quot;number&quot;==typeof t.content&amp;&amp;(t.content=t.content.toString()),r(&quot;tooltip&quot;,t,this.constructor.DefaultType),t.sanitize&amp;&amp;(t.template=qe(t.template,t.allowList,t.sanitizeFn)),t}_getDelegateConfig(){const t={};for(const e in this._config)this.constructor.Default[e]!==this._config[e]&amp;&amp;(t[e]=this._config[e]);return t}_cleanTipClass(){const t=this.getTipElement(),e=new RegExp(`(^|\\s)${this._getBasicClassPrefix()}\\S+`,&quot;g&quot;),i=t.getAttribute(&quot;class&quot;).match(e);null!==i&amp;&amp;i.length&gt;0&amp;&amp;i.map(t=&gt;t.trim()).forEach(e=&gt;t.classList.remove(e))}_getBasicClassPrefix(){return&quot;bs-tooltip&quot;}_handlePopperPlacementChange(t){const{state:e}=t;e&amp;&amp;(this.tip=e.elements.popper,this._cleanTipClass(),this._addAttachmentClass(this._getAttachment(e.placement)))}static jQueryInterface(t){return this.each((function(){const e=Xe.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===e[t])throw new TypeError(`No method named &quot;${t}&quot;`);e[t]()}}))}}m(Xe);const Ye={...Xe.Default,placement:&quot;right&quot;,offset:[0,8],trigger:&quot;click&quot;,content:&quot;&quot;,template:&#39;&lt;div class=&quot;popover&quot; role=&quot;tooltip&quot;&gt;&lt;div class=&quot;popover-arrow&quot;&gt;&lt;/div&gt;&lt;h3 class=&quot;popover-header&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;popover-body&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;},Qe={...Xe.DefaultType,content:&quot;(string|element|function)&quot;},Ge={HIDE:&quot;hide.bs.popover&quot;,HIDDEN:&quot;hidden.bs.popover&quot;,SHOW:&quot;show.bs.popover&quot;,SHOWN:&quot;shown.bs.popover&quot;,INSERTED:&quot;inserted.bs.popover&quot;,CLICK:&quot;click.bs.popover&quot;,FOCUSIN:&quot;focusin.bs.popover&quot;,FOCUSOUT:&quot;focusout.bs.popover&quot;,MOUSEENTER:&quot;mouseenter.bs.popover&quot;,MOUSELEAVE:&quot;mouseleave.bs.popover&quot;};class Ze extends Xe{static get Default(){return Ye}static get NAME(){return&quot;popover&quot;}static get Event(){return Ge}static get DefaultType(){return Qe}isWithContent(){return this.getTitle()||this._getContent()}setContent(t){this._sanitizeAndSetContent(t,this.getTitle(),&quot;.popover-header&quot;),this._sanitizeAndSetContent(t,this._getContent(),&quot;.popover-body&quot;)}_getContent(){return this._resolvePossibleFunction(this._config.content)}_getBasicClassPrefix(){return&quot;bs-popover&quot;}static jQueryInterface(t){return this.each((function(){const e=Ze.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===e[t])throw new TypeError(`No method named &quot;${t}&quot;`);e[t]()}}))}}m(Ze);const Je={offset:10,method:&quot;auto&quot;,target:&quot;&quot;},ti={offset:&quot;number&quot;,method:&quot;string&quot;,target:&quot;(string|element)&quot;},ei=&quot;.nav-link, .list-group-item, .dropdown-item&quot;;class ii extends H{constructor(t,e){super(t),this._scrollElement=&quot;BODY&quot;===this._element.tagName?window:this._element,this._config=this._getConfig(e),this._offsets=[],this._targets=[],this._activeTarget=null,this._scrollHeight=0,P.on(this._scrollElement,&quot;scroll.bs.scrollspy&quot;,()=&gt;this._process()),this.refresh(),this._process()}static get Default(){return Je}static get NAME(){return&quot;scrollspy&quot;}refresh(){const t=this._scrollElement===this._scrollElement.window?&quot;offset&quot;:&quot;position&quot;,i=&quot;auto&quot;===this._config.method?t:this._config.method,n=&quot;position&quot;===i?this._getScrollTop():0;this._offsets=[],this._targets=[],this._scrollHeight=this._getScrollHeight(),U.find(ei,this._config.target).map(t=&gt;{const s=e(t),o=s?U.findOne(s):null;if(o){const t=o.getBoundingClientRect();if(t.width||t.height)return[F[i](o).top+n,s]}return null}).filter(t=&gt;t).sort((t,e)=&gt;t[0]-e[0]).forEach(t=&gt;{this._offsets.push(t[0]),this._targets.push(t[1])})}dispose(){P.off(this._scrollElement,&quot;.bs.scrollspy&quot;),super.dispose()}_getConfig(t){return(t={...Je,...F.getDataAttributes(this._element),...&quot;object&quot;==typeof t&amp;&amp;t?t:{}}).target=o(t.target)||document.documentElement,r(&quot;scrollspy&quot;,t,ti),t}_getScrollTop(){return this._scrollElement===window?this._scrollElement.pageYOffset:this._scrollElement.scrollTop}_getScrollHeight(){return this._scrollElement.scrollHeight||Math.max(document.body.scrollHeight,document.documentElement.scrollHeight)}_getOffsetHeight(){return this._scrollElement===window?window.innerHeight:this._scrollElement.getBoundingClientRect().height}_process(){const t=this._getScrollTop()+this._config.offset,e=this._getScrollHeight(),i=this._config.offset+e-this._getOffsetHeight();if(this._scrollHeight!==e&amp;&amp;this.refresh(),t&gt;=i){const t=this._targets[this._targets.length-1];this._activeTarget!==t&amp;&amp;this._activate(t)}else{if(this._activeTarget&amp;&amp;t&lt;this._offsets[0]&amp;&amp;this._offsets[0]&gt;0)return this._activeTarget=null,void this._clear();for(let e=this._offsets.length;e--;)this._activeTarget!==this._targets[e]&amp;&amp;t&gt;=this._offsets[e]&amp;&amp;(void 0===this._offsets[e+1]||t&lt;this._offsets[e+1])&amp;&amp;this._activate(this._targets[e])}}_activate(t){this._activeTarget=t,this._clear();const e=ei.split(&quot;,&quot;).map(e=&gt;`${e}[data-bs-target=&quot;${t}&quot;],${e}[href=&quot;${t}&quot;]`),i=U.findOne(e.join(&quot;,&quot;),this._config.target);i.classList.add(&quot;active&quot;),i.classList.contains(&quot;dropdown-item&quot;)?U.findOne(&quot;.dropdown-toggle&quot;,i.closest(&quot;.dropdown&quot;)).classList.add(&quot;active&quot;):U.parents(i,&quot;.nav, .list-group&quot;).forEach(t=&gt;{U.prev(t,&quot;.nav-link, .list-group-item&quot;).forEach(t=&gt;t.classList.add(&quot;active&quot;)),U.prev(t,&quot;.nav-item&quot;).forEach(t=&gt;{U.children(t,&quot;.nav-link&quot;).forEach(t=&gt;t.classList.add(&quot;active&quot;))})}),P.trigger(this._scrollElement,&quot;activate.bs.scrollspy&quot;,{relatedTarget:t})}_clear(){U.find(ei,this._config.target).filter(t=&gt;t.classList.contains(&quot;active&quot;)).forEach(t=&gt;t.classList.remove(&quot;active&quot;))}static jQueryInterface(t){return this.each((function(){const e=ii.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===e[t])throw new TypeError(`No method named &quot;${t}&quot;`);e[t]()}}))}}P.on(window,&quot;load.bs.scrollspy.data-api&quot;,()=&gt;{U.find(&#39;[data-bs-spy=&quot;scroll&quot;]&#39;).forEach(t=&gt;new ii(t))}),m(ii);class ni extends H{static get NAME(){return&quot;tab&quot;}show(){if(this._element.parentNode&amp;&amp;this._element.parentNode.nodeType===Node.ELEMENT_NODE&amp;&amp;this._element.classList.contains(&quot;active&quot;))return;let t;const e=i(this._element),n=this._element.closest(&quot;.nav, .list-group&quot;);if(n){const e=&quot;UL&quot;===n.nodeName||&quot;OL&quot;===n.nodeName?&quot;:scope &gt; li &gt; .active&quot;:&quot;.active&quot;;t=U.find(e,n),t=t[t.length-1]}const s=t?P.trigger(t,&quot;hide.bs.tab&quot;,{relatedTarget:this._element}):null;if(P.trigger(this._element,&quot;show.bs.tab&quot;,{relatedTarget:t}).defaultPrevented||null!==s&amp;&amp;s.defaultPrevented)return;this._activate(this._element,n);const o=()=&gt;{P.trigger(t,&quot;hidden.bs.tab&quot;,{relatedTarget:this._element}),P.trigger(this._element,&quot;shown.bs.tab&quot;,{relatedTarget:t})};e?this._activate(e,e.parentNode,o):o()}_activate(t,e,i){const n=(!e||&quot;UL&quot;!==e.nodeName&amp;&amp;&quot;OL&quot;!==e.nodeName?U.children(e,&quot;.active&quot;):U.find(&quot;:scope &gt; li &gt; .active&quot;,e))[0],s=i&amp;&amp;n&amp;&amp;n.classList.contains(&quot;fade&quot;),o=()=&gt;this._transitionComplete(t,n,i);n&amp;&amp;s?(n.classList.remove(&quot;show&quot;),this._queueCallback(o,t,!0)):o()}_transitionComplete(t,e,i){if(e){e.classList.remove(&quot;active&quot;);const t=U.findOne(&quot;:scope &gt; .dropdown-menu .active&quot;,e.parentNode);t&amp;&amp;t.classList.remove(&quot;active&quot;),&quot;tab&quot;===e.getAttribute(&quot;role&quot;)&amp;&amp;e.setAttribute(&quot;aria-selected&quot;,!1)}t.classList.add(&quot;active&quot;),&quot;tab&quot;===t.getAttribute(&quot;role&quot;)&amp;&amp;t.setAttribute(&quot;aria-selected&quot;,!0),d(t),t.classList.contains(&quot;fade&quot;)&amp;&amp;t.classList.add(&quot;show&quot;);let n=t.parentNode;if(n&amp;&amp;&quot;LI&quot;===n.nodeName&amp;&amp;(n=n.parentNode),n&amp;&amp;n.classList.contains(&quot;dropdown-menu&quot;)){const e=t.closest(&quot;.dropdown&quot;);e&amp;&amp;U.find(&quot;.dropdown-toggle&quot;,e).forEach(t=&gt;t.classList.add(&quot;active&quot;)),t.setAttribute(&quot;aria-expanded&quot;,!0)}i&amp;&amp;i()}static jQueryInterface(t){return this.each((function(){const e=ni.getOrCreateInstance(this);if(&quot;string&quot;==typeof t){if(void 0===e[t])throw new TypeError(`No method named &quot;${t}&quot;`);e[t]()}}))}}P.on(document,&quot;click.bs.tab.data-api&quot;,&#39;[data-bs-toggle=&quot;tab&quot;], [data-bs-toggle=&quot;pill&quot;], [data-bs-toggle=&quot;list&quot;]&#39;,(function(t){[&quot;A&quot;,&quot;AREA&quot;].includes(this.tagName)&amp;&amp;t.preventDefault(),l(this)||ni.getOrCreateInstance(this).show()})),m(ni);const si={animation:&quot;boolean&quot;,autohide:&quot;boolean&quot;,delay:&quot;number&quot;},oi={animation:!0,autohide:!0,delay:5e3};class ri extends H{constructor(t,e){super(t),this._config=this._getConfig(e),this._timeout=null,this._hasMouseInteraction=!1,this._hasKeyboardInteraction=!1,this._setListeners()}static get DefaultType(){return si}static get Default(){return oi}static get NAME(){return&quot;toast&quot;}show(){P.trigger(this._element,&quot;show.bs.toast&quot;).defaultPrevented||(this._clearTimeout(),this._config.animation&amp;&amp;this._element.classList.add(&quot;fade&quot;),this._element.classList.remove(&quot;hide&quot;),d(this._element),this._element.classList.add(&quot;show&quot;),this._element.classList.add(&quot;showing&quot;),this._queueCallback(()=&gt;{this._element.classList.remove(&quot;showing&quot;),P.trigger(this._element,&quot;shown.bs.toast&quot;),this._maybeScheduleHide()},this._element,this._config.animation))}hide(){this._element.classList.contains(&quot;show&quot;)&amp;&amp;(P.trigger(this._element,&quot;hide.bs.toast&quot;).defaultPrevented||(this._element.classList.add(&quot;showing&quot;),this._queueCallback(()=&gt;{this._element.classList.add(&quot;hide&quot;),this._element.classList.remove(&quot;showing&quot;),this._element.classList.remove(&quot;show&quot;),P.trigger(this._element,&quot;hidden.bs.toast&quot;)},this._element,this._config.animation)))}dispose(){this._clearTimeout(),this._element.classList.contains(&quot;show&quot;)&amp;&amp;this._element.classList.remove(&quot;show&quot;),super.dispose()}_getConfig(t){return t={...oi,...F.getDataAttributes(this._element),...&quot;object&quot;==typeof t&amp;&amp;t?t:{}},r(&quot;toast&quot;,t,this.constructor.DefaultType),t}_maybeScheduleHide(){this._config.autohide&amp;&amp;(this._hasMouseInteraction||this._hasKeyboardInteraction||(this._timeout=setTimeout(()=&gt;{this.hide()},this._config.delay)))}_onInteraction(t,e){switch(t.type){case&quot;mouseover&quot;:case&quot;mouseout&quot;:this._hasMouseInteraction=e;break;case&quot;focusin&quot;:case&quot;focusout&quot;:this._hasKeyboardInteraction=e}if(e)return void this._clearTimeout();const i=t.relatedTarget;this._element===i||this._element.contains(i)||this._maybeScheduleHide()}_setListeners(){P.on(this._element,&quot;mouseover.bs.toast&quot;,t=&gt;this._onInteraction(t,!0)),P.on(this._element,&quot;mouseout.bs.toast&quot;,t=&gt;this._onInteraction(t,!1)),P.on(this._element,&quot;focusin.bs.toast&quot;,t=&gt;this._onInteraction(t,!0)),P.on(this._element,&quot;focusout.bs.toast&quot;,t=&gt;this._onInteraction(t,!1))}_clearTimeout(){clearTimeout(this._timeout),this._timeout=null}static jQueryInterface(t){return this.each((function(){const e=ri.getOrCreateInstance(this,t);if(&quot;string&quot;==typeof t){if(void 0===e[t])throw new TypeError(`No method named &quot;${t}&quot;`);e[t](this)}}))}}return B(ri),m(ri),{Alert:R,Button:W,Carousel:Z,Collapse:et,Dropdown:Te,Modal:Pe,Offcanvas:He,Popover:Ze,ScrollSpy:ii,Tab:ni,Toast:ri,Tooltip:Xe}}));
+//# sourceMappingURL=bootstrap.bundle.min.js.map</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>select</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Loosely Scoped Cookie</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/Vulnerabilities/SqlInjection</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes">WSTG-v42-SESS-02</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">OWASP_2021_A08</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The origin domain used for comparison was: </p>
+
+<p>localhost</p>
+
+<p>.AspNetCore.Antiforgery.PWx2ylKgrnw=CfDJ8E9MlYFGcVVKheALfoVZ4AkXAq-OaIlJpYsV4N9iVRbDFVsEEzh7pF_n4YAGRck03QM9cOljOX9-d-KVNyz-n_9KXhwa27Hb-t7KXmO3q3U8o_5YjAHNPmsBmcIYZ2N0N2SnfGIbYSHuORVhJCoohdU</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (291 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/Vulnerabilities/SqlInjection HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (635 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.PWx2ylKgrnw=CfDJ8E9MlYFGcVVKheALfoVZ4AkXAq-OaIlJpYsV4N9iVRbDFVsEEzh7pF_n4YAGRck03QM9cOljOX9-d-KVNyz-n_9KXhwa27Hb-t7KXmO3q3U8o_5YjAHNPmsBmcIYZ2N0N2SnfGIbYSHuORVhJCoohdU; path=/; samesite=strict; httponly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+content-length: 5911
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5911 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Secure coding&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/lib/bootstrap/dist/css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/Algebra.SecureCoding.Web.styles.css?v=_ILVjLF4CMbUu9c2uUFhGNKac4fRxnxz-Bb_zAoUkco&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header b-se97mstpe7&gt;
+        &lt;nav b-se97mstpe7 class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3&quot;&gt;
+            &lt;div b-se97mstpe7 class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Secure coding&lt;/a&gt;
+                &lt;button b-se97mstpe7 class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.navbar-collapse&quot; aria-controls=&quot;navbarSupportedContent&quot;
+                        aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span b-se97mstpe7 class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div b-se97mstpe7 class=&quot;navbar-collapse collapse d-sm-inline-flex justify-content-between&quot;&gt;
+                    &lt;ul b-se97mstpe7 class=&quot;navbar-nav flex-grow-1&quot;&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/Cors&quot;&gt;Broken access control (Cors)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/CryptographicFailures&quot;&gt;CryptographicFailures(No ssl, plain text)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/SqlInjection&quot;&gt;Injection (Sql injection)&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+        &lt;main b-se97mstpe7 role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+            
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+        &lt;h1&gt;A03:2021 – Injection&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12&quot;&gt;
+                    &lt;h3&gt;Overview&lt;/h3&gt;
+                    &lt;p&gt;Injection slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3%, and 274k occurrences. Notable Common Weakness Enumerations (CWEs) included are CWE-79: Cross-site Scripting, CWE-89: SQL Injection, and CWE-73: External Control of File Name or Path.&lt;/p&gt;
+                    &lt;h3&gt;Description&lt;/h3&gt;
+                    &lt;p&gt;An application is vulnerable to attack when:&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;User-supplied data is not validated, filtered, or sanitized by the application.&lt;/li&gt;
+                        &lt;li&gt;Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is used within object-relational mapping (ORM) search parameters to extract additional, sensitive records.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is directly used or concatenated. The SQL or command contains the structure and malicious data in dynamic queries, commands, or stored procedures.&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Some of the more common injections are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters. Source code review is the best method of detecting if applications are vulnerable to injections. Automated testing of all parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs is strongly encouraged. Organizations can include static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline to identify introduced injection flaws before production deployment.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6 p-3&quot;&gt;
+            &lt;div class=&quot;row float-end&quot;&gt;
+                &lt;h1 class=&quot;h1&quot;&gt;Try it out&lt;/h1&gt;
+                &lt;form method=&quot;post&quot; action=&quot;/Vulnerabilities/SqlInjection&quot;&gt;
+                    &lt;div class=&quot;mb-3&quot;&gt;
+                        &lt;label for=&quot;SearchTerm&quot; class=&quot;form-label&quot;&gt;Search products by name:&lt;/label&gt;
+                        &lt;input placeholder=&quot;Product name&quot; required type=&quot;text&quot; data-val=&quot;true&quot; data-val-required=&quot;Search term is required&quot; id=&quot;SearchTerm&quot; name=&quot;SearchTerm&quot; value=&quot;&quot;&gt;
+                        &lt;div id=&quot;SearchTermHelp&quot; class=&quot;form-text&quot;&gt;Dont wory, you wont break anything. Try with &#39; OR &#39;1&#39;=&#39;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Search&lt;/button&gt;
+                &lt;input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=&quot;CfDJ8E9MlYFGcVVKheALfoVZ4And0KVp2gzVr5axgwFuNAiGBkUKrZmzs0sqYdJea_GwSxuKCRxSm7DJ1JRt-53gLrdOI84agzLWuG171lc64zao4jXsaK7QzIEeWWVScVc2WDAaHDNEIHENsPJYNCvSRj0&quot; /&gt;&lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        &lt;/main&gt;
+    &lt;/div&gt;
+
+    &lt;footer b-se97mstpe7 class=&quot;border-top footer text-muted&quot;&gt;
+        &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+            &amp;copy; 2024 - Ivor Marić
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/lib/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/lib/bootstrap/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo&quot;&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Always scope cookies to a FQDN (Fully Qualified Domain Name).</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-5">Re-examine Cache-control Directives</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://localhost:7276/Vulnerabilities/SqlInjection</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses">WSTG-v42-ATHN-06</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The cache-control header has not been set properly or is missing, allowing the browser and proxies to cache content. For static assets like css, js, or image files this might be intended, however, the resources should be reviewed to ensure that no sensitive content will be cached.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (291 bytes)</summary>
+				
+				<pre><code>GET https://localhost:7276/Vulnerabilities/SqlInjection HTTP/1.1
+host: localhost:7276
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+pragma: no-cache
+cache-control: no-cache
+referer: https://localhost:7276
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (635 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Date: Sat, 03 Feb 2024 19:34:36 GMT
+Server: Kestrel
+Cache-Control: no-cache, no-store
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.PWx2ylKgrnw=CfDJ8E9MlYFGcVVKheALfoVZ4AkXAq-OaIlJpYsV4N9iVRbDFVsEEzh7pF_n4YAGRck03QM9cOljOX9-d-KVNyz-n_9KXhwa27Hb-t7KXmO3q3U8o_5YjAHNPmsBmcIYZ2N0N2SnfGIbYSHuORVhJCoohdU; path=/; samesite=strict; httponly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; font-src &#39;self&#39;; img-src &#39;self&#39;; frame-src &#39;self&#39;; frame-ancestors &#39;self&#39;; form-action &#39;self&#39;;
+content-length: 5911
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (5911 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Secure coding&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/lib/bootstrap/dist/css/bootstrap.min.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/Algebra.SecureCoding.Web.styles.css?v=_ILVjLF4CMbUu9c2uUFhGNKac4fRxnxz-Bb_zAoUkco&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header b-se97mstpe7&gt;
+        &lt;nav b-se97mstpe7 class=&quot;navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3&quot;&gt;
+            &lt;div b-se97mstpe7 class=&quot;container-fluid&quot;&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Secure coding&lt;/a&gt;
+                &lt;button b-se97mstpe7 class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;.navbar-collapse&quot; aria-controls=&quot;navbarSupportedContent&quot;
+                        aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+                    &lt;span b-se97mstpe7 class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;div b-se97mstpe7 class=&quot;navbar-collapse collapse d-sm-inline-flex justify-content-between&quot;&gt;
+                    &lt;ul b-se97mstpe7 class=&quot;navbar-nav flex-grow-1&quot;&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/Cors&quot;&gt;Broken access control (Cors)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/CryptographicFailures&quot;&gt;CryptographicFailures(No ssl, plain text)&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li b-se97mstpe7 class=&quot;nav-item&quot;&gt;
+                            &lt;a class=&quot;nav-link text-dark&quot; href=&quot;/Vulnerabilities/SqlInjection&quot;&gt;Injection (Sql injection)&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+        &lt;main b-se97mstpe7 role=&quot;main&quot; class=&quot;pb-3&quot;&gt;
+            
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;text-center&quot;&gt;
+        &lt;h1&gt;A03:2021 – Injection&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-lg-6&quot;&gt;
+            &lt;div class=&quot;row&quot;&gt;
+                &lt;div class=&quot;col-12&quot;&gt;
+                    &lt;h3&gt;Overview&lt;/h3&gt;
+                    &lt;p&gt;Injection slides down to the third position. 94% of the applications were tested for some form of injection with a max incidence rate of 19%, an average incidence rate of 3%, and 274k occurrences. Notable Common Weakness Enumerations (CWEs) included are CWE-79: Cross-site Scripting, CWE-89: SQL Injection, and CWE-73: External Control of File Name or Path.&lt;/p&gt;
+                    &lt;h3&gt;Description&lt;/h3&gt;
+                    &lt;p&gt;An application is vulnerable to attack when:&lt;/p&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;User-supplied data is not validated, filtered, or sanitized by the application.&lt;/li&gt;
+                        &lt;li&gt;Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is used within object-relational mapping (ORM) search parameters to extract additional, sensitive records.&lt;/li&gt;
+                        &lt;li&gt;Hostile data is directly used or concatenated. The SQL or command contains the structure and malicious data in dynamic queries, commands, or stored procedures.&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Some of the more common injections are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters. Source code review is the best method of detecting if applications are vulnerable to injections. Automated testing of all parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs is strongly encouraged. Organizations can include static (SAST), dynamic (DAST), and interactive (IAST) application security testing tools into the CI/CD pipeline to identify introduced injection flaws before production deployment.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-lg-6 p-3&quot;&gt;
+            &lt;div class=&quot;row float-end&quot;&gt;
+                &lt;h1 class=&quot;h1&quot;&gt;Try it out&lt;/h1&gt;
+                &lt;form method=&quot;post&quot; action=&quot;/Vulnerabilities/SqlInjection&quot;&gt;
+                    &lt;div class=&quot;mb-3&quot;&gt;
+                        &lt;label for=&quot;SearchTerm&quot; class=&quot;form-label&quot;&gt;Search products by name:&lt;/label&gt;
+                        &lt;input placeholder=&quot;Product name&quot; required type=&quot;text&quot; data-val=&quot;true&quot; data-val-required=&quot;Search term is required&quot; id=&quot;SearchTerm&quot; name=&quot;SearchTerm&quot; value=&quot;&quot;&gt;
+                        &lt;div id=&quot;SearchTermHelp&quot; class=&quot;form-text&quot;&gt;Dont wory, you wont break anything. Try with &#39; OR &#39;1&#39;=&#39;1&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Search&lt;/button&gt;
+                &lt;input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=&quot;CfDJ8E9MlYFGcVVKheALfoVZ4And0KVp2gzVr5axgwFuNAiGBkUKrZmzs0sqYdJea_GwSxuKCRxSm7DJ1JRt-53gLrdOI84agzLWuG171lc64zao4jXsaK7QzIEeWWVScVc2WDAaHDNEIHENsPJYNCvSRj0&quot; /&gt;&lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        &lt;/main&gt;
+    &lt;/div&gt;
+
+    &lt;footer b-se97mstpe7 class=&quot;border-top footer text-muted&quot;&gt;
+        &lt;div b-se97mstpe7 class=&quot;container&quot;&gt;
+            &amp;copy; 2024 - Ivor Marić
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;script src=&quot;/lib/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/lib/bootstrap/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo&quot;&gt;&lt;/script&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>cache-control</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>no-cache, no-store</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Cookie Without Secure Flag</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10011/">Cookie Without Secure Flag</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/614.html">614</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Strict-Transport-Security Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10035/">Strict-Transport-Security Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/319.html">319</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+										<li><a
+											href="http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security">http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security</a></li>
+										<li><a
+											href="http://caniuse.com/stricttransportsecurity">http://caniuse.com/stricttransportsecurity</a></li>
+										<li><a
+											href="http://tools.ietf.org/html/rfc6797">http://tools.ietf.org/html/rfc6797</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>X-Content-Type-Options Header Missing</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10021/">X-Content-Type-Options Header Missing</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a></li>
+										<li><a
+											href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Information Disclosure - Suspicious Comments</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10027/">Information Disclosure - Suspicious Comments</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/200.html">200</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Loosely Scoped Cookie</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/90033/">Loosely Scoped Cookie</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/565.html">565</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://tools.ietf.org/html/rfc6265#section-4.1">https://tools.ietf.org/html/rfc6265#section-4.1</a></li>
+										<li><a
+											href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html">https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html</a></li>
+										<li><a
+											href="http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies">http://code.google.com/p/browsersec/wiki/Part2#Same-origin_policy_for_cookies</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-5">
+						<h4>Re-examine Cache-control Directives</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10015/">Re-examine Cache-control Directives</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/525.html">525</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>13</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching">https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching</a></li>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a></li>
+										<li><a
+											href="https://grayduck.mn/2021/09/13/cache-control-recommendations/">https://grayduck.mn/2021/09/13/cache-control-recommendations/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-6">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-7">
+						<h4>User Agent Fuzzer</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by an active scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10104/">User Agent Fuzzer</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/wstg">https://owasp.org/wstg</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+

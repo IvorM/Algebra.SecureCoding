@@ -1,4 +1,5 @@
 ﻿using Algebra.SecureCoding.Web.Models.SqlInjection;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

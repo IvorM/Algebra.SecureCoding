@@ -37,24 +37,36 @@
                     </tbody>
                 </table>
             </div>
-            <h2>How was it fixed?</h2>
-            <p>Developer started using CORS policy. Now only requests from https://localhost7276 can call it.</p>
-            <pre><code>
-builder.Services.AddCors(options =>
-{
-    options.AddDefaultPolicy(
-                      policy =>
-                      {
-                          policy.WithOrigins("https://localhost:7276").AllowAnyMethod().AllowAnyHeader();
-                      });
-});
-            </code></pre>
-            <a href="https://localhost:7205" class="btn btn-primary float-end">Try it</a>
+            <h2>What's this</h2>
+            <p>This page loads sensitive data from different origin. </p>
+            <div id="errorContainer" style="visibility:hidden">
+                <h2>Request was rejected</h2>
+                <p>Looks like developer implemented CORS. You can check developer console. It should display request was blocked.</p>
+            </div>
         </div>
     </div>
 </div>
 
 
 @section Scripts {
-    <script src="~/js/cors.js"></script>
+    <script>
+        $(document).ready(function () {
+            fetch("https://localhost:7276/api/SuperCoolFunctionality", {
+                method: "GET",
+            }).then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('adviceTable').getElementsByTagName('tbody')[0];
+                    data.forEach(item => {
+                        let row = tableBody.insertRow();
+                        let cell = row.insertCell(0);
+                        cell.innerHTML = item.advice;
+                    });
+                }).catch(error => {
+                    console.log('eto');
+                    document.getElementById('errorContainer').style.visibility = "visible";
+                });
+        });
+
+
+    </script>
 } 

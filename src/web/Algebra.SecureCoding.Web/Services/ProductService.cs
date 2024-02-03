@@ -27,7 +27,7 @@ namespace Algebra.SecureCoding.Web.Services
                 await _context.SaveChangesAsync();
 
                 var products = await _context.Products
-                            .FromSqlRaw($"SELECT * FROM Products WHERE Name LIKE '%{name}%'")
+                            .Where(x=>x.Name.Contains(name))
                             .Select(x => new ProductDto
                             {
                                 Name = x.Name,

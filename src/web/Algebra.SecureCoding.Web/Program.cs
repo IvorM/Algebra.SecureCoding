@@ -4,6 +4,14 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+                      policy =>
+                      {
+                          policy.WithOrigins("https://localhost:7276").AllowAnyMethod().AllowAnyHeader();
+                      });
+});
 
 builder.Services.AddControllersWithViews();
 
@@ -13,24 +21,25 @@ builder.Services.AddDbContext<DbSqlInjectionContext>(options =>
 
 builder.Services.AddScoped<IProductService,ProductService>();
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("OpenPolicy",
-        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-});
 
 var app = builder.Build();
-
+app.UseHttpsRedirection();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+app.Use(async (context, next) => {
+    context.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+    context.Response.Headers.Add("Content-Security-Policy", "default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; frame-src 'self'; frame-ancestors 'self'; form-action 'self'; ");
+
+    await next();
+});
 
 
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseCors("OpenPolicy");
+app.UseCors();
 app.UseAuthorization();
 
 app.MapControllerRoute(
