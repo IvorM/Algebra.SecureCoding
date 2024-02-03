@@ -14,6 +14,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{73B0D31C-2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.Web", "src\web\Algebra.SecureCoding.Web\Algebra.SecureCoding.Web.csproj", "{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zap_report-prefix", "zap_report-prefix", "{72EFEE8C-8F87-48D4-9DAA-57F683D4707A}"
+	ProjectSection(SolutionItems) = preProject
+		src\docs\zap_report-prefix\2024-02-03-ZAP-Report-.html = src\docs\zap_report-prefix\2024-02-03-ZAP-Report-.html
+		src\docs\zap_report-prefix\zap32x32.png = src\docs\zap_report-prefix\zap32x32.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "themes", "themes", "{62C365D7-E4BE-4CB7-AF13-FE97A291A970}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "original", "original", "{2C1422A7-D7E0-44D7-9A44-032FB33F8C50}"
+	ProjectSection(SolutionItems) = preProject
+		src\docs\zap_report-prefix\themes\original\colors.css = src\docs\zap_report-prefix\themes\original\colors.css
+		src\docs\zap_report-prefix\themes\original\main.css = src\docs\zap_report-prefix\themes\original\main.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "normalize", "normalize", "{6B325D5D-32EB-443F-8BF4-81133E891A72}"
+	ProjectSection(SolutionItems) = preProject
+		src\docs\zap_report-prefix\normalize\LICENSE.md = src\docs\zap_report-prefix\normalize\LICENSE.md
+		src\docs\zap_report-prefix\normalize\normalize.css = src\docs\zap_report-prefix\normalize\normalize.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +52,10 @@ Global
 		{028E1C49-D8ED-4C8E-86B1-6928A2D76EE4} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
 		{73B0D31C-24FC-4A9C-B8D0-6705CEE9BF0D} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
 		{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C} = {028E1C49-D8ED-4C8E-86B1-6928A2D76EE4}
+		{72EFEE8C-8F87-48D4-9DAA-57F683D4707A} = {73B0D31C-24FC-4A9C-B8D0-6705CEE9BF0D}
+		{62C365D7-E4BE-4CB7-AF13-FE97A291A970} = {72EFEE8C-8F87-48D4-9DAA-57F683D4707A}
+		{2C1422A7-D7E0-44D7-9A44-032FB33F8C50} = {62C365D7-E4BE-4CB7-AF13-FE97A291A970}
+		{6B325D5D-32EB-443F-8BF4-81133E891A72} = {72EFEE8C-8F87-48D4-9DAA-57F683D4707A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F03C4222-6179-453C-826C-C1A44D6D3CB0}
