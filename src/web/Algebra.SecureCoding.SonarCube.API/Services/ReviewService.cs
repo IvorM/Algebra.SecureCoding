@@ -13,7 +13,7 @@ namespace Algebra.SecureCoding.SonarCube.API.Services
         }
         public async Task<List<ReviewDto>?> FindAllByHardwareCode(string hardwareCode)
         {
-            return await _context.Reviews
+            return  _context.Reviews
                 .Include(x => x.Hardware)
                 .Where(x => x.Hardware.Code.Equals(hardwareCode))
                 .Select(x => new ReviewDto
@@ -22,10 +22,10 @@ namespace Algebra.SecureCoding.SonarCube.API.Services
                     Text = x.Text,
                     Title= x.Title
                 })
-                .ToListAsync();
+                .ToList();
         }
 
-        public async Task<List<ReviewDto>?> GetAllReviews()
+        public async Task<List<ReviewDto>> GetAllReviews()
         {
             return await _context.Reviews
                 .Select(x => new ReviewDto()

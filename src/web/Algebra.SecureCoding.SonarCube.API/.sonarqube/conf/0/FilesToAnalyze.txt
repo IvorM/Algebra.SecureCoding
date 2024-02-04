@@ -1,0 +1,27 @@
+﻿C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Controllers\HardwareController.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Controllers\ReviewController.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\DataContext.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\Hardware.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\HardwareType.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\Review.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\SeedData.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Migrations\20240204095212_Init creation.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Migrations\20240204095212_Init creation.Designer.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Migrations\DataContextModelSnapshot.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Models\HardwareDto.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Models\NewHardwareDto.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Models\ReviewDto.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Models\UpdateHardwareDto.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Program.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Services\HardwareServices.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Services\IHardwareService.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Services\IReviewService.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Services\ReviewService.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\obj\Debug\net8.0\Algebra.SecureCoding.SonarCube.API.GlobalUsings.g.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\obj\Debug\net8.0\Algebra.SecureCoding.SonarCube.API.AssemblyInfo.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\obj\Debug\net8.0\Algebra.SecureCoding.SonarCube.API.MvcApplicationPartsAssemblyInfo.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\appsettings.Development.json
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\appsettings.json
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Algebra.SecureCoding.SonarCube.API.http
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Properties\launchSettings.json

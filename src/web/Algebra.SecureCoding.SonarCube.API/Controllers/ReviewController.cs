@@ -15,13 +15,13 @@ namespace Algebra.SecureCoding.SonarCube.API.Controllers
             _reviewService = reviewService;
         }
         [HttpGet("GetAllReviews")]
-        public async Task<List<ReviewDto>?> GetAllReviews()
+        public async Task<List<ReviewDto>> GetAllReviews()
         {
             return await _reviewService.GetAllReviews();
         }
 
         [HttpGet("{hardwareCode}",Name ="GetAllReviewsByHardwareCode")]
-        public async Task<List<ReviewDto>?> GetAllReviewsByHardwareCode([FromRoute] string hardwareCode)
+        public async Task<List<ReviewDto>> GetAllReviewsByHardwareCode([FromRoute] string hardwareCode)
         {
             return await _reviewService.FindAllByHardwareCode(hardwareCode);
         }
