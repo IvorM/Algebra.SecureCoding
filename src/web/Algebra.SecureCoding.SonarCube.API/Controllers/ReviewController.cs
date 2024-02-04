@@ -9,19 +9,19 @@ namespace Algebra.SecureCoding.SonarCube.API.Controllers
     [ApiController]
     public class ReviewController : ControllerBase
     {
-        public IReviewService _reviewService;
+        private readonly IReviewService _reviewService;
         public ReviewController(IReviewService reviewService)
         {
             _reviewService = reviewService;
         }
         [HttpGet("GetAllReviews")]
-        public async Task<List<ReviewDto>> GetAllReviews()
+        public async Task<List<ReviewDto>?> GetAllReviews()
         {
             return await _reviewService.GetAllReviews();
         }
 
         [HttpGet("{hardwareCode}",Name ="GetAllReviewsByHardwareCode")]
-        public async Task<List<ReviewDto>> GetAllReviewsByHardwareCode([FromRoute] string hardwareCode)
+        public async Task<List<ReviewDto>?> GetAllReviewsByHardwareCode([FromRoute] string hardwareCode)
         {
             return await _reviewService.FindAllByHardwareCode(hardwareCode);
         }

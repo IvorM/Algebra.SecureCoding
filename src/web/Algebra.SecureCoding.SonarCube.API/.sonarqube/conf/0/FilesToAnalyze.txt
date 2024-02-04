@@ -5,6 +5,8 @@ C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\HardwareType.cs
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\Review.cs
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Data\SeedData.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Mapper\HardwareMapper.cs
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Mapper\ReviewMapper.cs
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Migrations\20240204095212_Init creation.cs
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Migrations\20240204095212_Init creation.Designer.cs
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Migrations\DataContextModelSnapshot.cs
@@ -24,4 +26,6 @@ C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\appsettings.Development.json
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\appsettings.json
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Algebra.SecureCoding.SonarCube.API.http
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\coverage.xml
+C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\sonar.sh
 C:\ProjektiDoma\Algebra.SecureCoding\src\web\Algebra.SecureCoding.SonarCube.API\Properties\launchSettings.json

@@ -1,6 +1,6 @@
 ﻿using Algebra.SecureCoding.SonarCube.API.Data;
+using Algebra.SecureCoding.SonarCube.API.Mapper;
 using Algebra.SecureCoding.SonarCube.API.Models;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Algebra.SecureCoding.SonarCube.API.Services
@@ -14,80 +14,58 @@ namespace Algebra.SecureCoding.SonarCube.API.Services
         }
         public async Task Delete(string code)
         {
-            var hardwareToDelete = await _context.Hardwares.SingleOrDefaultAsync(x => x.Code.Equals(code));
-            _context.Hardwares.Remove(hardwareToDelete);
-            _context.SaveChanges();
+            var existingHardware = await _context.Hardwares.SingleOrDefaultAsync(x => x.Code.Equals(code));
+            if (existingHardware != null)
+            {
+                _context.Hardwares.Remove(existingHardware);
+                _context.SaveChanges();
+            }
         }
 
         public async Task<List<HardwareDto>?> GetAll()
         {
             return await _context.Hardwares
-                .Select(x => new HardwareDto
-                {
-                    Code = x.Code,
-                    Name = x.Name,
-                    Price=x.Price
-                })
+                .Select(x=>x.ToHardwareDto())
                 .ToListAsync();
         }
 
-        public async Task<HardwareDto> GetByCode(string code)
+        public async Task<HardwareDto?> GetByCode(string code)
         {
-            var hardware= await _context.Hardwares.FromSqlRaw("SELECT * FROM Hardwares WHERE Code = '" + code + "'")
-                .FirstOrDefaultAsync();
+            var hardware = await _context.Hardwares
+                .FirstOrDefaultAsync(x => x.Code.Equals(code));
 
-            return new HardwareDto
+            if (hardware!=null)
             {
-                Code = hardware.Code,
-                Name = hardware.Name,
-                Price = hardware.Price
-            };
+                return hardware.ToHardwareDto();
+            }
+
+            return null;
         }
 
-        public async Task<HardwareDto?> Save(NewHardwareDto hardware)
+        public async Task<HardwareDto?> Save(NewHardwareDto newHardware)
         {
-            _context.Hardwares.Add(new Hardware
-            {
-                Code=hardware.Code,
-                Name=hardware.Name,
-                Price=hardware.Price,
-                Stock=hardware.Stock,
-                Type=hardware.Type
-            });
+            _context.Hardwares.Add(newHardware.ToHardware());
             await _context.SaveChangesAsync();
 
-            return new HardwareDto { Code = hardware.Code, Name = hardware.Name, Price = hardware.Price };
+            return newHardware.ToHardwareDto();
         }
 
-        public async Task<HardwareDto> Update(string code, UpdateHardwareDto hardware)
+        public async Task<HardwareDto?> Update(string code, UpdateHardwareDto updateHardware)
         {
-            //Zašto ovo ne detektira otvoreni connection???
-            if (code==hardware.Code)
+            var existingHardware = await _context.Hardwares.FirstOrDefaultAsync(x => x.Code.Equals(code));
+            if (existingHardware != null)
             {
-                var _connectionString = "Server=(localdb)\\mssqllocaldb;Database=SecureCodingStore;Trusted_Connection=True;MultipleActiveResultSets=true";
-                var connection = new SqlConnection(_connectionString);
-                connection.Open();
-                var command = new SqlCommand("UPDATE Hardwares SET Name = @Name, Price = @Price, Stock = @Stock, Type = @Type WHERE Code = @Code", connection);
-                command.Parameters.AddWithValue("@Name", hardware.Name);
-                command.Parameters.AddWithValue("@Price", hardware.Price);
-                command.Parameters.AddWithValue("@Stock", hardware.Stock);
-                command.Parameters.AddWithValue("@Type", hardware.Type);
-                command.Parameters.AddWithValue("@Code", code);
+                updateHardware.ToHardware(existingHardware);
 
-                command.ExecuteNonQuery();
-                return new HardwareDto
-                {
-                    Code = code,
-                    Name = hardware.Name,
-                    Price = hardware.Price
-                };
+                _context.Hardwares.Update(existingHardware);
+                await _context.SaveChangesAsync();
+
+                return existingHardware.ToHardwareDto();
             }
-            else
-            {
-                return null;
-            }
-            
+
+
+            return null;
+           
         }
-
     }
 }

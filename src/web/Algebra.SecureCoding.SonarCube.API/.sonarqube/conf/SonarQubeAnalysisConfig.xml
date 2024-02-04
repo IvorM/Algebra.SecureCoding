@@ -133,6 +133,7 @@
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>
+    <Property Name="sonar.cs.vscoveragexml.reportPaths">coverage.xml</Property>
   </LocalSettings>
   <AnalyzersSettings>
     <AnalyzerSettings>

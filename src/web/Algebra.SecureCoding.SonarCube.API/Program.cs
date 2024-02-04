@@ -12,7 +12,7 @@ builder.Services.AddDbContext<DataContext>(options =>
         options.UseSqlServer(connectionString));
 
 builder.Services.TryAddScoped<IHardwareService,HardwareServices>();
-//builder.Services.TryAddScoped<IReviewService, ReviewService>();
+builder.Services.TryAddScoped<IReviewService, ReviewService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -31,3 +31,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+public partial class Program { }

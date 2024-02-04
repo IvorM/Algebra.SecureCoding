@@ -7,8 +7,8 @@ namespace Algebra.SecureCoding.SonarCube.API.Services
     {
         Task<List<HardwareDto>?> GetAll();
         Task<HardwareDto?> GetByCode(string code);
-        Task<HardwareDto?> Save(NewHardwareDto hardware);
-        Task<HardwareDto?> Update(string code,UpdateHardwareDto hardware);
+        Task<HardwareDto?> Save(NewHardwareDto newHardware);
+        Task<HardwareDto?> Update(string code,UpdateHardwareDto updateHardware);
         Task Delete(string code);
     }
 }
