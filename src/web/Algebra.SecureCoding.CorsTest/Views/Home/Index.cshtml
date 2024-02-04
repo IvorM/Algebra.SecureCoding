@@ -38,16 +38,11 @@
                 </table>
             </div>
             <h2>What's this</h2>
-            <p>This page loads sensitive data, that attracts people to this page. Data is delivered by API. Unforitunatly, developer allowed all origins and every body can display ths data.  </p>
-            <pre><code>
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("OpenPolicy",
-        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-});
-            </code></pre>
-            <h2>Let's try it.</h2>
-            <a href="https://localhost:7205" class="btn btn-primary float-end">Try it</a>
+            <p>This page loads sensitive data from different origin. </p>
+            <div id="errorContainer" style="visibility:hidden">
+                <h2>Request was rejected</h2>
+                <p>Looks like developer implemented CORS. You can check developer console. It should display request was blocked.</p>
+            </div>
         </div>
     </div>
 </div>
@@ -56,7 +51,7 @@ builder.Services.AddCors(options =>
 @section Scripts {
     <script>
         $(document).ready(function () {
-            fetch("/api/SuperCoolFunctionality", {
+            fetch("https://localhost:7276/api/SuperCoolFunctionality", {
                 method: "GET",
             }).then(response => response.json())
                 .then(data => {
@@ -67,10 +62,11 @@ builder.Services.AddCors(options =>
                         cell.innerHTML = item.advice;
                     });
                 }).catch(error => {
-                console.log(error);
-            });
+                    console.log('eto');
+                    document.getElementById('errorContainer').style.visibility = "visible";
+                });
         });
-        
+
 
     </script>
 } 
