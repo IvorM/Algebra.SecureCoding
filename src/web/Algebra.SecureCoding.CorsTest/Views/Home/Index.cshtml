@@ -51,7 +51,7 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            fetch("https://localhost:7276/api/SuperCoolFunctionality", {
+            fetch("http://localhost:5017/api/SuperCoolFunctionality", {
                 method: "GET",
             }).then(response => response.json())
                 .then(data => {

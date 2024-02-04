@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "original", "original", "{2C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "normalize", "normalize", "{6B325D5D-32EB-443F-8BF4-81133E891A72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.Web", "src\web\Algebra.SecureCoding.Web\Algebra.SecureCoding.Web.csproj", "{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algebra.SecureCoding.Web", "src\web\Algebra.SecureCoding.Web\Algebra.SecureCoding.Web.csproj", "{3E032EE8-4B44-4F79-A8FC-EF4984DE0A6C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algebra.SecureCoding.CorsTest", "src\web\Algebra.SecureCoding.CorsTest\Algebra.SecureCoding.CorsTest.csproj", "{73EA8B6E-7D18-4CBF-BB4C-1A119C2CEE1A}"
 EndProject
