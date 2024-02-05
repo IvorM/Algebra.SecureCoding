@@ -6,6 +6,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using static Algebra.SecureCoding.Serializable.SafeDeserializer;
 
 namespace Algebra.SecureCoding.Serializable
 {
@@ -41,9 +42,23 @@ namespace Algebra.SecureCoding.Serializable
         {
             using (MemoryStream ms = new MemoryStream(serializedData))
             {
-                IFormatter formatter = new BinaryFormatter();
-                dynamic deserializeObject = formatter.Deserialize(ms);
-                Console.WriteLine(deserializeObject.Name);
+                try
+                {
+                    var formatter = new SafeBinaryFormatter();
+                    dynamic deserializeObject = formatter.Deserialize(ms);
+                    Console.WriteLine(deserializeObject.Name);
+                }
+                catch (SerializationException e)
+                {
+
+                    Console.WriteLine(e.Message);
+                }
+                catch (Exception e)
+                {
+
+                    Console.WriteLine(e.Message);
+                }
+
             }
         }
 
