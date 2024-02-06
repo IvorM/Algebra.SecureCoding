@@ -61,6 +61,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algebra.SecureCoding.Auth.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.Serializable", "src\desktop\Algebra.SecureCoding.Serializable\Algebra.SecureCoding.Serializable.csproj", "{80CA11F5-D7F7-4B74-9162-555941989485}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.BestPractices.AuthProvider", "src\web\Algebra.SecureCoding.BestPractices.AuthProvider\Algebra.SecureCoding.BestPractices.AuthProvider.csproj", "{49AECD24-C7FC-45DC-873D-1C20B8448BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.BestPractices.MvcClient", "src\web\Algebra.SecureCoding.BestPractices.MvcClient\Algebra.SecureCoding.BestPractices.MvcClient.csproj", "{80AF2A94-6EB6-4C51-9B68-4C469175510C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algebra.SecureCoding.BestPractices.API", "src\web\Algebra.SecureCoding.BestPractices.API\Algebra.SecureCoding.BestPractices.API.csproj", "{2817FE30-77F1-4C4D-A130-9F95642E37AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +101,18 @@ Global
 		{80CA11F5-D7F7-4B74-9162-555941989485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80CA11F5-D7F7-4B74-9162-555941989485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80CA11F5-D7F7-4B74-9162-555941989485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AECD24-C7FC-45DC-873D-1C20B8448BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AECD24-C7FC-45DC-873D-1C20B8448BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AECD24-C7FC-45DC-873D-1C20B8448BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AECD24-C7FC-45DC-873D-1C20B8448BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80AF2A94-6EB6-4C51-9B68-4C469175510C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AF2A94-6EB6-4C51-9B68-4C469175510C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AF2A94-6EB6-4C51-9B68-4C469175510C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AF2A94-6EB6-4C51-9B68-4C469175510C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2817FE30-77F1-4C4D-A130-9F95642E37AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2817FE30-77F1-4C4D-A130-9F95642E37AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2817FE30-77F1-4C4D-A130-9F95642E37AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2817FE30-77F1-4C4D-A130-9F95642E37AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,6 +139,9 @@ Global
 		{0FD61775-FBFA-4520-BE95-96572CA468DC} = {749A7DED-8DC6-4174-9EC3-9F0837792B15}
 		{F8DFE5C8-725E-43F2-A943-367BAF900D01} = {0FD61775-FBFA-4520-BE95-96572CA468DC}
 		{80CA11F5-D7F7-4B74-9162-555941989485} = {0FD61775-FBFA-4520-BE95-96572CA468DC}
+		{49AECD24-C7FC-45DC-873D-1C20B8448BA9} = {028E1C49-D8ED-4C8E-86B1-6928A2D76EE4}
+		{80AF2A94-6EB6-4C51-9B68-4C469175510C} = {028E1C49-D8ED-4C8E-86B1-6928A2D76EE4}
+		{2817FE30-77F1-4C4D-A130-9F95642E37AB} = {028E1C49-D8ED-4C8E-86B1-6928A2D76EE4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F03C4222-6179-453C-826C-C1A44D6D3CB0}
